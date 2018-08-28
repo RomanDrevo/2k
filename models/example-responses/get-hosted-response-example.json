@@ -1,0 +1,14 @@
+/*
+this is the example response for a successful finish of the create new hosted site funnel.
+for creating the UI, the funnel can be skipped for now by sendin a POST/hosted request, then cutting straight to receiving the full hosted obj as appears in this
+GET/hosted response.
+
+in reality, when sending the POST/hosted request, there will be returned a mostly empty object (as you can see from the post-hosted-response.json in this dir
+that's because we send the duplicator request async, and only after polling the client will be able to determine that the duplication has finished,
+when pollion with a GET/hosted request like this returns the is_duplication_ready=True, then you can trust the other fields like thumbnail_url (to show in the create/edit campaign funnel) and the url of the duplicated site itself.
+
+this is the response for GET/hosted with param hosted_id=20
+*/
+{
+    "hosted_site": "{\"business_id\": 29, \"created_at\": \"2017-09-23T19:23:51.706313+00:00\", \"duplicate_site_any_html_max_path\": \"static/29/20/www.iti-college.co.il/wp-content/plugins/bwp-minify/min/index6b8c.html\", \"duplicate_site_classic_index_html_max_path\": \"static/29/20/www.iti-college.co.il/\\u05de\\u05d9\\u05e0\\u05d9\\u05e1\\u05d9\\u05d9\\u05d8/nc-\\u05e7\\u05d5\\u05e8\\u05e1-\\u05e0\\u05d9\\u05d4\\u05d5\\u05dc-\\u05e9\\u05e8\\u05ea\\u05d9-linux/index.html\", \"duplicated_at\": \"2017-09-23T19:24:29.767930+00:00\", \"entrypoint_short_url\": \"https://goo.gl/ZYqLrg\", \"id\": 20, \"is_duplication_ready\": true, \"last_update_at\": null, \"name\": \"linux\", \"original_landing_page_url\": \"http://bit.ly/iTi_linux\", \"product_id\": 47, \"screenshot_media_id\": null, \"screenshot_url\": null, \"thumbnail_media_id\": 122, \"thumbnail_url\": \"http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/20/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg\"}"
+}

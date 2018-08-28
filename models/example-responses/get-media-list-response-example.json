@@ -1,0 +1,493 @@
+// response example for GET/media/list for params:  business_id=29&hosted_site_id=21
+{
+    "my_lib": [
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": null,
+            "my_lib_business_id": 29,
+            "from_hosted_site_id": null,
+            "last_update_at": null,
+            "id": 65,
+            "y2": null,
+            "y1": null,
+            "web_url": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/20108509_1592030204164906_947541567157716282_n.jpg?oh=66ce8cb2b347a72b536ee3dbf0cf52a1&oe=5A3FA748",
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": null,
+            "created_at": "2017-09-19T11:47:44.209979+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/20108509_1592030204164906_947541567157716282_n.jpg?oh=66ce8cb2b347a72b536ee3dbf0cf52a1&oe=5A3FA748"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": null,
+            "my_lib_business_id": 29,
+            "from_hosted_site_id": null,
+            "last_update_at": null,
+            "id": 66,
+            "y2": null,
+            "y1": null,
+            "web_url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/20108428_1592029970831596_1309529856870764565_n.jpg?oh=d904cf6363bb508fdaa385d5de430809&oe=5A519A21",
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": null,
+            "created_at": "2017-09-19T11:47:44.248760+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/20108428_1592029970831596_1309529856870764565_n.jpg?oh=d904cf6363bb508fdaa385d5de430809&oe=5A519A21"
+        }
+    ],
+    "from_hosted": [
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/08/p4.svg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 127,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.453995+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/08/p4.svg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/07/guides.svg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 128,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.456520+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/07/guides.svg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/07/mini_star.svg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 129,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.458166+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/07/mini_star.svg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/07/rocket_line.svg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 130,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.472565+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/07/rocket_line.svg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/ness.svg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 131,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.474213+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/ness.svg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/pilat.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 132,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.475868+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/pilat.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/sy.svg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 133,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.477496+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/sy.svg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/par.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 134,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.479093+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/par.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/MSpartnerlogo.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 135,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.480763+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/MSpartnerlogo.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/cisco.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 136,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.482399+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/cisco.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/ist.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 137,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.484047+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2016/06/ist.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 138,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.485802+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/04/techjob.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 139,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.487485+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/04/techjob.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/אמזון-הזדמנויות-עסקיות.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 140,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.489290+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/אמזון-הזדמנויות-עסקיות.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/WhatsApp-Image-2017-06-11-at-17.34.08.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 141,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.491050+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/WhatsApp-Image-2017-06-11-at-17.34.08.jpg"
+        },
+        {
+            "is_deleted": null,
+            "x2": null,
+            "x1": null,
+            "twokey_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/A-amazon.jpg",
+            "my_lib_business_id": null,
+            "from_hosted_site_id": 21,
+            "last_update_at": null,
+            "id": 142,
+            "y2": null,
+            "y1": null,
+            "web_url": null,
+            "type": "IMAGE",
+            "deleted_by": null,
+            "deleted_at": null,
+            "business_id": 29,
+            "created_at": "2017-09-24T06:39:00.492817+00:00",
+            "default_crop_upper_left": {
+                "x": null,
+                "y": null
+            },
+            "default_crop_lower_right": {
+                "x": null,
+                "y": null
+            },
+            "url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/A-amazon.jpg"
+        }
+    ]
+}

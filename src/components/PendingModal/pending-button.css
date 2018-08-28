@@ -1,0 +1,22 @@
+.btn-pending-container {
+  background: #57D589;
+  width: 150px;
+  height: 38px;
+  border-radius: 19px;
+  padding: 1px;
+  color: white;
+  display: flex;
+  cursor: pointer;
+  margin-right: 6px; }
+
+.pending-number-wrapper {
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 18px;
+  color: #57D589;
+  padding: 6px 0;
+  text-align: center; }
+  .pending-number-wrapper + div {
+    padding: 6px;
+    text-transform: uppercase; }

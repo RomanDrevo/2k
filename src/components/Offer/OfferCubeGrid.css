@@ -1,0 +1,19 @@
+.minimal-padding {
+  padding: 5px; }
+
+
+.offer-cube-grid-empty h4 {
+  color:#96989a;
+  text-align:center;
+  border-top: 1px solid #96989a;
+  border-bottom: 1px solid #96989a;
+  padding:20px 0;
+  width:60%;
+  margin:100px auto 0;
+}
+
+@media (max-width: 991px) {
+  .offer-cube-grid-empty h4 {
+    width:85%
+  }
+}

@@ -1,0 +1,70 @@
+.legend {
+  display: flex;
+  .legend-item {
+    flex: 1;
+    text-align: center;
+    .legend-value {
+      color: #434343;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .legend-desc {
+
+      .legend-icon {
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        border-radius: 5px;
+        margin: auto;
+        display: inline-block;
+      }
+
+      .legend-title {
+        color: #434343;
+        font-size: 13px;
+        display: inline-block;
+        padding: 5px;
+      }
+    }
+  }
+}
+
+.stack-area-chart {
+  margin: auto;
+  position: relative;
+
+  .chart-tooltip {
+    position: absolute;
+    opacity: 0.9;
+    background-color: #b6c5cf;
+    padding: 7px 10px 7px 7px;
+    color: #212530;
+    font: 400 10px 'Open Sans' !important;
+    border-radius: 3px;
+    visibility: hidden;
+    left: 0px;
+    top: 0px;
+
+    .chart-tooltip-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 2px;
+      display: inline-block;
+      vertical-align: top;
+      border: solid 1px #212530;
+    }
+
+    .chart-tooltip-key {
+      display: inline-block;
+      line-height: 15px;
+      margin-left: 10px;
+    }
+
+    .chart-tooltip-value {
+      display: inline-block;
+      line-height: 15px;
+      margin-left: 10px;
+      font-weight: bold;
+    }
+  }
+}

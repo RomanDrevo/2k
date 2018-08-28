@@ -1,0 +1,28 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "GET/product/list schema",
+  "description":"response from GET/product/list with params: business_id, fields=id,name",
+  "type" : "object",
+  "properties" : {
+    "items":{
+                "type":"array",
+                "items": {
+                            "type":"object",
+                            "properties":{
+                                "user_role":{"type":"string","description":"one of owner/advertiser/influencer/likes/guest"},
+                                "id":{"type":"integer","description":"the product_id"},
+                                "name":{"type":"string","description":"the product name"}
+
+                            }
+
+                        }
+
+            }
+    }
+}
+
+
+
+
+
+

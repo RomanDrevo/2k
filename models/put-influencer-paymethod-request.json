@@ -1,0 +1,23 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "PUT/influencer/paymethod schema",
+  "type" : "object",
+  "properties" : {
+        "paymethod_id":{"type":"integer"},
+        "method_type" : {"type":"string","description":"from enum PaymentMethodType names"},
+        "payment_provider_id" : {"type":"integer","description":"from the payment_provider as pulled from the GET/enums e.g. banks[0].id"},
+        "bank_branch_id"  : {"type":"string","description":""},
+        "bank_account_id" : {"type":"string","description":""},
+        "bank_account_name"  : {"type":"string","description":""},
+        "user_social_id"  : {"type":"string","description":""},
+        "iban_code"   : {"type":"string","description":""},
+        "swift_code"   : {"type":"string","description":""},
+        "billing_name"   : {"type":"string","description":""},
+        "billing_address"   : {"type":"string","description":""},
+        "is_deleted"   : {"type":"boolean","description":""},
+        "is_default": {"type":"boolean"}
+
+
+    },
+  "required": ["paymethod_id"]
+}

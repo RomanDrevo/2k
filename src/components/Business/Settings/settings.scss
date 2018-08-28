@@ -1,0 +1,71 @@
+@import "vars";
+
+.business-info-wrapper{
+  .paypal-button{
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: #ffc439;
+  }
+  .paypal-button:hover{
+    background: #d3ad13;
+    cursor: pointer;
+  }
+  .cash-in-btn{
+    //width: 40%;
+    padding: 10px 0px;
+    background: #1A936F;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  .cash-in-amount{
+    //width: 32%;
+    margin-right: 30px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .business-info-header{
+    border: 1px solid #6DB8A2;
+    border-radius: 4px;
+    background: #fff;
+    .header-item{
+      width: 100%;
+      padding: 10px 20px;
+      margin-top: 7px;
+      margin-bottom: 7px;
+      border-left: 1px solid #DADADA;
+      border-right: 1px solid #DADADA;
+      text-align: center;
+      .header-item-numeric{
+        font-size: 25px;
+      }
+    }
+  }
+  .business-info-body{
+    background: #fff;
+    border: 1px solid $light-gray;
+    .notifications-settings-item{
+      box-shadow: 0 2px 1px -1px $light-gray;
+    }
+    .text-input-container {
+      width: 93%;
+    }
+    .phone-wrapper{
+      width: 158%;
+      padding-bottom: 3px;
+      padding-top: 3px;
+      margit-top: 2px;
+      border: 1px solid #95989A;
+      border-radius: 5px;
+      .rrui__input-field, .rrui__select__button {
+        border: none;
+        border-bottom: none;
+        -webkit-transition: border 0.1s;
+        -o-transition: border 0.1s;
+        transition: border 0.1s;
+      }
+    }
+  }
+}

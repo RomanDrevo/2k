@@ -1,0 +1,4 @@
+.campaignResults .loading {
+  display: flex;
+  align-items: center;
+  min-height: 320px; }

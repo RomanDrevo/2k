@@ -1,0 +1,30 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "GET/product/list schema",
+  "description":"response from GET/hosted/list with params: product_id",
+  "type" : "object",
+  "properties" : {
+    "type":{"type":"string","description":"value will be 'by parent product id'"},
+    "items":{
+                "type":"array",
+                "items": {
+                            "type":"object",
+                            "properties":{
+                                "user_role":{"type":"string","description":"one of owner/advertiser/influencer/likes/guest"},
+                                "id":{"type":"integer","description":"the hosted_site id"},
+                                "name":{"type":"string","description":"the hosted_site name"},
+                                "business_id":{"type":"string","description":"the business_id associated with this hosted site"},
+                                "thumbnail_media_id":{"type":"integer","description":"the media_id for the thumbnail to show"},
+                                "thumbnail_url":{"type":"string","description":"the location from which to render this thumbmail for the hosted site"},
+                                "is_duplication_ready":{"type":"boolean","description":"indicates whether the system believes the duplication finished ssuccessfully"},
+                                "original_landing_page_url":{"type":"string","description":"the original landing page from which the hosted site was duplicated"},
+                                "duplicated_at":{"type":"string","description":"valid timestamp format with timezone"},
+                                "duplicate_site_entrypoint_full_url":{"type":"string","description":"the path from which to show/link to the hosted site"},
+                                "screenshot_media_id":{"type":"integer","description":"the media_id for the screenshot of the duplicated page"},
+                                "screenshot_url":{"type":"string","description":"the location from which to render this screenshot for the hosted site"}
+                            }
+
+                        }
+            }
+    }
+}

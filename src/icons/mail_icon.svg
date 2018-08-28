@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7164 2610 66 66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d4d4d;
+        font-size: 15px;
+        font-family: Helvetica;
+      }
+
+      .cls-2 {
+        fill: #c71610;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_2409" data-name="Group 2409" transform="translate(7174 2610)">
+    <text id="Email" class="cls-1" transform="translate(3.954 63.542)"><tspan x="0" y="0">Email</tspan></text>
+    <g id="Group_1369" data-name="Group 1369" transform="translate(0 0)">
+      <circle id="Ellipse_9" data-name="Ellipse 9" class="cls-2" cx="22.383" cy="22.383" r="22.383" transform="translate(0)"/>
+      <path id="ic_email_24px" class="cls-3" d="M24.876,4H4.542A2.538,2.538,0,0,0,2.013,6.542L2,21.792a2.549,2.549,0,0,0,2.542,2.542H24.876a2.549,2.549,0,0,0,2.542-2.542V6.542A2.549,2.549,0,0,0,24.876,4Zm0,5.083L14.709,15.438,4.542,9.083V6.542L14.709,12.9,24.876,6.542Z" transform="translate(8.132 8.451)"/>
+    </g>
+  </g>
+</svg>

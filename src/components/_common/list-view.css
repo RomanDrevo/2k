@@ -1,0 +1,43 @@
+.list-row-container {
+  background: #ECEBEB; }
+  .list-row-container.striped {
+    background: #D1D1D1; }
+  .list-row-container .title {
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+    color: #747474; }
+  .list-row-container .name {
+    font-size: 13px !important;
+    color: #3A3A3A;
+    font-weight: bold;
+    padding: 1px; }
+  .list-row-container .description {
+    font-size: 13px;
+    color: #3A3A3A;
+    padding: 1px; }
+  .list-row-container .avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 17.5px;
+    background: #BABABA;
+    margin: 5px auto;
+    padding: 5px; }
+    .list-row-container .avatar img {
+      width: 25px;
+      height: 25px; }
+
+.list-item-icon img {
+  width: 60px;
+  height: 60px; }
+
+.list-item-title {
+  font-size: 13px !important;
+  color: #3A3A3A;
+  font-weight: bold;
+  padding: 1px; }
+
+.list-item-desc {
+  font-size: 13px;
+  color: #95989A;
+  padding: 1px; }

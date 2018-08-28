@@ -1,0 +1,76 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "GET/influencer/balance schema",
+  "description":"response from GET/influencer/balance",
+  "type" : "object",
+  "properties" : {
+        "total_paid":{"type":"number","description":"total paid to date to the influencer - total cashed out"},
+        "currency":{"type":"string","description":"currency which was paid"},
+        "withdrawl_history":{
+            "type":"array",
+            "items":{
+                "type":"object",
+                "properties":{
+                    "date":{"type":"string","description":"isoformat date"},
+                    "deposited_to":{"type":"string","description":"deposited to target"},
+                    "tax_paid_percent":{"type":"number"},
+                    "tax_paid_amount":{"type":"number"},
+                    "paid_amount":{"type":"number"},
+                    "paid_currency":{"type":"string"},
+                    "payment_status":{"type":"string","descriptiong":"either PROCESSING or COMPLETED"}
+                }
+            }
+        },
+        "my_earnings":{
+            "type":"object",
+            "properties":{
+                "business_summary":{
+                    "type":"array",
+                    "items":{
+                        "type": "object",
+                        "properties":{
+                            "business_name":{"type":"string"},
+                            "business_id":{"type":"integer"},
+                            "business_profile_pic_url":{"type":"string"},
+                            "business_profile_pic_media_id":{"type":"integer"},
+                            "total_earnings":{"type":"number"},
+                            "last_activity":{"type":"string","description":"iso-format datetime"},
+                            "profile_x1":{"type":"integer"},
+                            "profile_x2":{"type":"integer"},
+                            "profile_y1":{"type":"integer"},
+                            "profile_y2":{"type":"integer"},
+                            "balance_to_cash":{"type":"number"},
+                            "currency":{"type":"string"}
+                        }
+                    }
+                },
+                "business_id_to_campaigns":{
+                    "type":"object",
+                    "description":"dict from business_id to array of campaigns earnings breakdown",
+                    "additionalProperties":{
+                        "type":"array",
+                        "items":{
+                            "type":"object",
+                            "properties":{
+                                "campaign_headline":{"type":"string"},
+                                "campaign_id":{"type":"integer"},
+                                "campaign_image_url":{"type":"string"},
+                                "campaign_image_media_id":{"type":"integer"},
+                                "media_x1":{"type":"integer"},
+                                "media_x2":{"type":"integer"},
+                                "media_y1":{"type":"integer"},
+                                "media_y2":{"type":"integer"},
+                                "total_earnings":{"type":"number"},
+                                "balance_to_cash":{"type":"number"},
+                                "currency":{"type":"string"},
+                                "last_activity":{"type":"string","description":"iso-format datetime"}
+
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,95 @@
+.onBoarding-overlay {
+  display: block;
+  position: absolute;
+  background: transparent !important;
+  z-index: 8; }
+  .onBoarding-overlay.mobile {
+    display: flex;
+    position: fixed;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1040; }
+
+.onBoarding {
+  position: relative;
+  width: 85%;
+  min-height: 85vh;
+  margin: 650px auto auto;
+  padding: 30px;
+  border: 3px solid #1a936f;
+  border-radius: 20px;
+  background: #f7f7f7;
+  color: #434343;
+  z-index: 9; }
+  .onBoarding.mobile {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    z-index: 1050; }
+    .onBoarding.mobile .slick-dots li.slick-active button:before {
+      opacity: 1;
+      color: #1a936f; }
+    .onBoarding.mobile .slick-dots li button:before {
+      font-size: 14px; }
+    .onBoarding.mobile .slick-dots li button:focus:before {
+      color: #1a936f; }
+    .onBoarding.mobile .closeContainer {
+      margin: -20px 10px 0 0; }
+    .onBoarding.mobile .onboardItem {
+      padding-bottom: 50px; }
+      .onBoarding.mobile .onboardItem img {
+        width: 200px;
+        margin: 30px auto; }
+  .onBoarding .closeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: -20px -10px 0 0; }
+    .onBoarding .closeContainer i {
+      color: #ccc; }
+      .onBoarding .closeContainer i:hover {
+        color: #ddd; }
+  .onBoarding .onboardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px; }
+    .onBoarding .onboardItem img {
+      width: 120px;
+      margin: 0 auto; }
+    .onBoarding .onboardItem h3 {
+      text-align: center; }
+    .onBoarding .onboardItem p {
+      height: 50px;
+      max-width: 220px;
+      margin: 0 auto 1rem;
+      text-align: center; }
+  .onBoarding .modal-header {
+    display: block;
+    padding: 0; }
+    .onBoarding .modal-header h2 {
+      margin-top: 5px; }
+  .onBoarding .faq {
+    margin-top: 10px; }
+    .onBoarding .faq h4 {
+      font-size: 16px;
+      font-weight: bold; }
+    .onBoarding .faq p {
+      font-size: 14px;
+      color: #96999b; }
+  .onBoarding .footerContainer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 30px;
+    left: 30px;
+    right: 30px; }
+    .onBoarding .footerContainer p {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center; }

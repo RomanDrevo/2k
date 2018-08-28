@@ -1,0 +1,58 @@
+.business-info-wrapper .paypal-button {
+  padding: 10px 25px;
+  border-radius: 50px;
+  background: #ffc439; }
+
+.business-info-wrapper .paypal-button:hover {
+  background: #d3ad13;
+  cursor: pointer; }
+
+.business-info-wrapper .cash-in-btn {
+  padding: 10px 0px;
+  background: #1A936F;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50px; }
+
+.business-info-wrapper .cash-in-amount {
+  margin-right: 30px;
+  border: 1px solid #95989A;
+  border-radius: 5px;
+  font-size: 25px;
+  text-align: center; }
+
+.business-info-wrapper .business-info-header {
+  border: 1px solid #6DB8A2;
+  border-radius: 4px;
+  background: #fff; }
+  .business-info-wrapper .business-info-header .header-item {
+    width: 100%;
+    padding: 10px 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    border-left: 1px solid #DADADA;
+    border-right: 1px solid #DADADA;
+    text-align: center; }
+    .business-info-wrapper .business-info-header .header-item .header-item-numeric {
+      font-size: 25px; }
+
+.business-info-wrapper .business-info-body {
+  background: #fff;
+  border: 1px solid #95989A; }
+  .business-info-wrapper .business-info-body .notifications-settings-item {
+    box-shadow: 0 2px 1px -1px #95989A; }
+  .business-info-wrapper .business-info-body .text-input-container {
+    width: 93%; }
+  .business-info-wrapper .business-info-body .phone-wrapper {
+    width: 158%;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margit-top: 2px;
+    border: 1px solid #95989A;
+    border-radius: 5px; }
+    .business-info-wrapper .business-info-body .phone-wrapper .rrui__input-field, .business-info-wrapper .business-info-body .phone-wrapper .rrui__select__button {
+      border: none;
+      border-bottom: none;
+      -webkit-transition: border 0.1s;
+      -o-transition: border 0.1s;
+      transition: border 0.1s; }

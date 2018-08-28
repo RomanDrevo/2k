@@ -1,0 +1,40 @@
+.text-input-container {
+  width: 100%; }
+  .text-input-container.inline .field-label {
+    margin-right: 5px; }
+  .text-input-container .input-wrapper {
+    position: relative;
+    height: 38px;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid transparent; }
+    .text-input-container .input-wrapper:hover {
+      border: 1px solid #57d589; }
+    .text-input-container .input-wrapper.focused {
+      padding: 5px;
+      border: 2px solid #57d589; }
+    .text-input-container .input-wrapper .text-input-action {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 3px;
+      top: 0;
+      height: 100%; }
+    .text-input-container .input-wrapper input {
+      padding: 0; }
+    .text-input-container .input-wrapper.border {
+      border: 1px solid #95989A !important;
+      border-radius: 5px; }
+    .text-input-container .input-wrapper.error-inside {
+      border-color: red !important; }
+      .text-input-container .input-wrapper.error-inside input {
+        color: red !important; }
+    .text-input-container .input-wrapper.action-exist input {
+      padding-right: 25px; }
+    .text-input-container .input-wrapper.disabled {
+      background: #ecebeb; }
+      .text-input-container .input-wrapper.disabled:hover {
+        border: 1px solid transparent; }
+      .text-input-container .input-wrapper.disabled.focused {
+        border: 1px solid transparent; }

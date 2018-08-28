@@ -1,0 +1,11 @@
+/*
+response from PUT/hosted with payload:
+{
+	"product_id":46,
+	"name": "mcsa course",
+}
+*/
+{
+    "hosted_site": "{\"business_id\": 29, \"created_at\": \"2017-09-19T15:52:58.318264+00:00\", \"duplicate_site_any_html_max_path\": null, \"duplicate_site_classic_index_html_max_path\": null, \"duplicated_at\": null, \"entrypoint_short_url\": null, \"id\": 19, \"is_duplication_ready\": false, \"last_update_at\": null, \"name\": \"mcsa course\", \"original_landing_page_url\": \"http://bit.ly/iTi_MCSA\", \"product_id\": 46, \"screenshot_media_id\": null, \"screenshot_url\": null, \"thumbnail_media_id\": null, \"thumbnail_url\": null}"
+}
+

@@ -1,0 +1,356 @@
+.balance.desktop {
+  font-family: Roboto;
+  color: #434343;
+  padding: 11px 15%;
+  text-align: left; }
+  .balance.desktop .paypal-withdrawal-window-wrapper .cash-out-amount {
+    margin-right: 30px;
+    border: 1px solid #95989A;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+    padding: 0 84px; }
+  .balance.desktop .paypal-withdrawal-window-wrapper .paypal-button {
+    padding: 10px 25px;
+    border-radius: 50px;
+    background: #ffc439; }
+  .balance.desktop .paypal-withdrawal-window-wrapper .paypal-button:hover {
+    background: #d3ad13;
+    cursor: pointer; }
+  .balance.desktop .payment-method-btn {
+    background-color: #1A936F;
+    color: #fff;
+    border-radius: 50px; }
+  .balance.desktop .cancel-btn {
+    cursor: pointer;
+    font-size: 12px;
+    padding-top: 5px; }
+  .balance.desktop .new-account-buttons-wrapper {
+    padding: 40px; }
+    .balance.desktop .new-account-buttons-wrapper .payment-method-btn {
+      background-color: #1A936F;
+      color: #fff;
+      border-radius: 50px; }
+    .balance.desktop .new-account-buttons-wrapper .method-bank-message {
+      color: #828282; }
+  .balance.desktop .withdrawal-window .withdrawal-title {
+    font-size: 20px;
+    font-weight: 500; }
+  .balance.desktop .withdrawal-window .text-input-container {
+    width: 42%; }
+    .balance.desktop .withdrawal-window .text-input-container input {
+      padding: 10px;
+      font-size: 25px; }
+  .balance.desktop .withdrawal-window .edit-account {
+    font-size: 11px;
+    color: #898989; }
+  .balance.desktop .withdrawal-window .cancel-withdrawal-btn {
+    cursor: pointer;
+    font-size: 12px;
+    padding-top: 5px;
+    text-transform: uppercase; }
+
+.balance.mobile {
+  text-align: left; }
+  .balance.mobile .new-account-buttons-wrapper .payment-method-btn {
+    background-color: #1A936F;
+    color: #fff;
+    border-radius: 50px; }
+  .balance.mobile .new-account-buttons-wrapper .method-bank-message {
+    color: #828282; }
+  .balance.mobile .sub-menu-container {
+    margin-top: 0px;
+    margin-bottom: 20px; }
+  .balance.mobile .body {
+    max-height: calc(100vh - 112px);
+    padding: 0;
+    font-family: Roboto;
+    color: #434343; }
+
+.balance .mobile-paid {
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: #434343;
+  font-size: 18px;
+  font-weight: 300; }
+
+.balance .flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.balance .header {
+  font-size: 20px;
+  padding: 15px 0px; }
+
+.balance .mobile-header {
+  background-color: white;
+  margin: 10px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-family: Roboto;
+  padding: 6px 10px; }
+
+.balance .mobile-header-text {
+  font-size: 12px;
+  color: #434343; }
+
+.balance .right-text {
+  text-align: right; }
+
+.balance .button-text-cash-out {
+  color: #114B5F; }
+
+.balance .my-earning {
+  max-width: 100vw;
+  box-shadow: 0 5px 5px #ccc;
+  border: 1px solid #1A936F;
+  border-radius: 0 3px 3px 3px;
+  overflow-x: hidden; }
+  .balance .my-earning .accordion__title {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    border: none; }
+  .balance .my-earning .accordion__body {
+    padding: 0 20px; }
+  .balance .my-earning .business-name {
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 600; }
+  .balance .my-earning .last-activity,
+  .balance .my-earning .last-activity:hover {
+    text-decoration: none;
+    color: #C3C4C6; }
+  .balance .my-earning .btn-link:focus, .balance .my-earning .btn-link:hover {
+    text-decoration: none; }
+  .balance .my-earning button {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important; }
+  .balance .my-earning .btn {
+    height: 100%;
+    padding: 0 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    border-radius: 0 3px 3px 3px;
+    cursor: pointer; }
+    .balance .my-earning .btn:focus {
+      outline: none;
+      box-shadow: 0 0 0 0 transparent; }
+  .balance .my-earning .balance .my-earning .btn {
+    height: 100%;
+    font-family: Roboto;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 3px; }
+  .balance .my-earning .card-header {
+    padding: 0;
+    border: 0; }
+  .balance .my-earning .card-body {
+    padding: 0; }
+
+.balance .mobile-total-earning {
+  color: #1A936F;
+  font-size: 15px; }
+
+.balance .mobile-header-img {
+  height: 36px; }
+
+.balance .mobile-withdrawal-history {
+  margin: 5px 0px;
+  padding: 10px;
+  color: #747474;
+  font-size: 14px;
+  border-right: 1px solid #95989a;
+  text-align: center; }
+  .balance .mobile-withdrawal-history .selected {
+    color: #1A936F;
+    font-weight: 600; }
+  .balance .mobile-withdrawal-history .unselected {
+    color: #747474; }
+
+.balance .mobile-earning {
+  margin: 5px 0px;
+  padding: 10px;
+  color: #95989a;
+  font-size: 14px;
+  text-align: center; }
+  .balance .mobile-earning .selected {
+    color: #1A936F;
+    font-weight: 600; }
+  .balance .mobile-earning .unselected {
+    color: #747474; }
+
+.balance .earning {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #1A936F; }
+  .balance .earning .earning-items {
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #d1d1d1;
+    margin: 5px 0px; }
+  .balance .earning .earning-item-content {
+    min-height: 37.5px;
+    font-size: 25px;
+    font-weight: 300; }
+  .balance .earning .earning-item-title {
+    font-size: 15px;
+    font-weight: 300; }
+
+.balance .row-direction {
+  display: flex; }
+
+.balance borderTopZero {
+  border-top: 0px solid; }
+
+.balance .business-Summary {
+  background-color: white;
+  width: 100%;
+  padding: 5px 10px 8px;
+  color: #434343;
+  font-family: Roboto; }
+  .balance .business-Summary .profile-img {
+    border: 1px solid #d1d1d1;
+    height: 59px;
+    width: 59px;
+    object-fit: cover; }
+  .balance .business-Summary .detail-profile-img {
+    border: 1px solid #d1d1d1;
+    width: 120px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    display: flex; }
+    .balance .business-Summary .detail-profile-img img {
+      max-width: 100%;
+      max-height: 100%; }
+  .balance .business-Summary .detail-crop-profile-img {
+    max-width: 100%;
+    max-height: 100%; }
+  .balance .business-Summary .mobile-profile-img {
+    border: 1px solid #d1d1d1;
+    height: 50px;
+    width: 50px; }
+  .balance .business-Summary .content {
+    margin-left: 10px; }
+  .balance .business-Summary .business-name {
+    color: #434343;
+    font-size: 16px; }
+  .balance .business-Summary .line {
+    border-bottom: 1px solid #1A936F; }
+  .balance .business-Summary .business-id-to-name {
+    color: #434343;
+    font-size: 16px; }
+  .balance .business-Summary .last-activity {
+    margin-top: 15px;
+    color: #95989A;
+    font-size: 12px; }
+  .balance .business-Summary .mobile-last-activity {
+    color: #95989A;
+    font-size: 10px; }
+    .balance .business-Summary .mobile-last-activity .last-activity-mobile {
+      max-width: 100px;
+      white-space: normal; }
+  .balance .business-Summary .fullwidth {
+    width: 100%; }
+  .balance .business-Summary .to-cash {
+    background-color: #1A936F;
+    padding: 5px 25px;
+    margin-left: 20px;
+    border: 1px solid #1A936F; }
+  .balance .business-Summary .mobile-to-cash {
+    background-color: #1A936F;
+    padding: 0 5px;
+    margin-left: 5px;
+    border: 1px solid #1A936F; }
+  .balance .business-Summary .to-cash-zoro {
+    background-color: white;
+    padding: 0 25px;
+    margin-left: 20px;
+    border: 1px solid #1A936F; }
+  .balance .business-Summary .mobile-to-cash-zoro {
+    background-color: white;
+    padding: 0 15px;
+    margin-left: 5px;
+    border: 1px solid #1A936F; }
+  .balance .business-Summary .total-earnings {
+    color: #434343;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300; }
+  .balance .business-Summary .total-earnings-title {
+    color: #434343;
+    text-align: center;
+    font-size: 12px; }
+  .balance .business-Summary .to-cash-earnings {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 300; }
+  .balance .business-Summary .to-cash-earnings-title {
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 300; }
+  .balance .business-Summary .arrow {
+    width: 50px; }
+  .balance .business-Summary .arrow-bottom-img {
+    height: 15px; }
+  .balance .business-Summary .mobile-arrow-img {
+    height: 12px; }
+  .balance .business-Summary .arrow-right-img {
+    width: 15px; }
+  .balance .business-Summary .align-text {
+    text-align: center; }
+  .balance .business-Summary .right-bottom-conner {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; }
+  .balance .business-Summary .media-icon {
+    width: 120px;
+    height: 62px; }
+    .balance .business-Summary .media-icon img {
+      max-width: 100%;
+      max-height: 100%; }
+
+.balance .withdrawal-container {
+  width: 100%;
+  border: 1px solid #1A936F;
+  border-bottom: 0px solid;
+  color: #434343;
+  font-size: 12px; }
+  .balance .withdrawal-container .withdrawal-title {
+    font-weight: bold;
+    padding: 5px 10px 5px 35px;
+    border-bottom: 2px solid #1A936F; }
+  .balance .withdrawal-container .date-description {
+    padding: 5px 10px 5px 35px; }
+  .balance .withdrawal-container .date {
+    width: 100%;
+    border-bottom: 1px solid #1A936F;
+    font-size: 16px;
+    color: #434343;
+    font-weight: bold; }
+  .balance .withdrawal-container .description {
+    font-size: 12px;
+    color: #95989A;
+    justify-content: center; }
+  .balance .withdrawal-container .paid-amount {
+    font-size: 18px;
+    color: #1A936F;
+    font-weight: 300; }
+  .balance .withdrawal-container .tax-paid-amount {
+    font-size: 12px;
+    color: #434343; }
+  .balance .withdrawal-container .lockimg {
+    height: 18px; }
+  .balance .withdrawal-container .withdrawal-content {
+    border-bottom: 0px solid #1A936F; }

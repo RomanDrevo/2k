@@ -1,0 +1,14 @@
+.spinner {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+  background: rgba(255, 255, 255, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1A936F; }
+  .spinner .spinner-icon {
+    text-align: center; }

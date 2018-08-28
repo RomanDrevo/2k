@@ -1,0 +1,84 @@
+.btn {
+  height: 38px;
+  padding: 0 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer; }
+  .btn.disabled {
+    opacity: 1; }
+  .btn.rounded {
+    border-radius: 19px !important; }
+  .btn.small {
+    height: 20px;
+    font-size: 14px;
+    padding: 0 10px; }
+    .btn.small.rounded {
+      border-radius: 10px !important; }
+  .btn.middle {
+    height: 26px;
+    font-size: 13px;
+    padding: 0 10px; }
+    .btn.middle.rounded {
+      border-radius: 13px !important; }
+  .btn.default {
+    background: #57D589;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+    color: #FFF; }
+    .btn.default.loading {
+      background: #ccc url("./rolling-loading.svg") no-repeat center center;
+      background-size: 85% 85%; }
+      .btn.default.loading:hover {
+        background: #ccc url("./rolling-loading.svg") no-repeat center center;
+        background-size: 85% 85%;
+        cursor: default; }
+    .btn.default:hover {
+      background: #43BE74; }
+    .btn.default:active {
+      background: #57D589;
+      box-shadow: none; }
+    .btn.default.disabled {
+      background: #EAEAEA;
+      color: #A7AAAB; }
+  .btn.select {
+    background: #EEEEEE;
+    border: 1px solid #95989A;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+    color: #434343; }
+    .btn.select:hover {
+      background: #E0E0E0; }
+    .btn.select.disabled {
+      background: #EEEEEE;
+      color: #A7AAAB; }
+  .btn.cancel {
+    background: #95989A;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+    color: #FFF; }
+    .btn.cancel:hover {
+      background: #95989A; }
+    .btn.cancel:active {
+      background: #95989A;
+      box-shadow: none; }
+  .btn.transparent {
+    background: transparent !important; }
+  .btn.swal {
+    height: 38px !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    border-left-color: unset !important;
+    border-right-color: unset !important; }
+    .btn.swal.confirm {
+      background: #57D589 !important; }
+    .btn.swal.cancel {
+      background: #95989A; }
+    .btn.swal.black-color {
+      color: #434343; }
+
+.invalid .btn {
+  opacity: 1; }
+  .invalid .btn.select {
+    background: #EEEEEE;
+    color: #A7AAAB; }
+  .invalid .btn.default {
+    background: #EAEAEA;
+    color: #A7AAAB; }

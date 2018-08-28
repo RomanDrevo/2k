@@ -1,0 +1,33 @@
+@import "vars";
+.info-tooltip-container {
+  line-height: 14px;
+  
+  .info-tooltip-trigger {
+    margin: 0 7px 2px;
+    display: inline-block;
+    width: 14px;
+  }
+
+  .info-tooltip-box {
+    border:2px solid $light-green;
+    // background: $light-green !important;
+    background: #f2f2f2;
+    box-shadow: 0 3px 5px 5px rgba(0, 38, 19, .16);
+
+    &::after {
+      border-right-color:$light-green !important;
+      border-right-width:13px !important;
+      left: -14px !important;
+    }
+    
+    &.type-light {
+      color: #434343;
+    }
+
+    h4 {
+      color: #0071BC;
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+}

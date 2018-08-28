@@ -1,0 +1,286 @@
+import _ from 'lodash'
+import PropTypes from 'prop-types'
+import React from 'react'
+import loading from './loading.svg'
+import { hashCode } from '../../_core/utils'
+
+export default class ClipImg extends React.PureComponent {
+  static propTypes = {
+    src: PropTypes.string.isRequired,
+    x1: PropTypes.number,
+    y1: PropTypes.number,
+    x2: PropTypes.number,
+    y2: PropTypes.number,
+    style: PropTypes.object,
+    className: PropTypes.string
+  }
+
+  state = {
+    loading: false,
+    width: 0,
+    height: 0,
+    originalWidth: 0,
+    originalHeight: 0
+  }
+
+  componentWillMount() {
+    const imgHash = hashCode(this.props.src)
+    this.id = btoa(`img${imgHash * Math.random()}${Date.now()}`)
+    this.containerId = btoa(`container${imgHash * Math.random()}${Date.now()}`)
+    // this.imgObject = new Image()
+  }
+
+  componentDidMount() {
+    // this.imgNode = document.getElementById(this.id)
+    this.container = document.getElementById(this.containerId)
+    console.log('width', this.container.clientWidth)
+    this.mounted = true
+    this.setDimensions()
+    // this.drawCroppedImage(this.props)
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const {
+      x1, y1, x2, y2, src
+    } = this.props
+    if (src !== nextProps.src || x1 !== nextProps.x1 || y1 !== nextProps.y1
+      || x2 !== nextProps.x2 || y2 !== nextProps.y2) {
+      // this.drawCroppedImage(nextProps)
+    }
+  }
+
+  componentWillUnmount() {
+    this.mounted = false
+    // this.imgObject.src = null
+    // this.imgObject.onLoad = null
+    // this.imgObject.onerror = null
+    // this.imgObject = null
+  }
+
+
+  // shouldComponentUpdate(nextProps) {
+  //   const shouldUpdate = !_.isEqual(nextProps, this.props)
+  //   return shouldUpdate
+  // }
+
+  getImagePortion = (props) => {
+    /* the parameters: - the image element - the new width -
+    the new height - the x point we start taking pixels -
+    the y point we start taking pixels - the ratio */
+    // set up canvas for thumbnail
+    const {
+      imgObj, x1 = 0, y1 = 0, ratio = 1
+    } = props
+    const { x2 = imgObj.width, y2 = imgObj.height } = props
+
+    /* use the sourceCanvas to duplicate the entire image.
+    This step was crucial for iOS4 and under devices.
+    Follow the link at the end of this post to see what happens when you don’t do this */
+    const bufferCanvas = document.createElement('canvas')
+    const bufferContext = bufferCanvas.getContext('2d')
+    bufferCanvas.width = imgObj.naturalWidth || imgObj.width
+    bufferCanvas.height = imgObj.naturalHeight || imgObj.height
+    bufferContext.drawImage(imgObj, 0, 0)
+
+    const newWidth = x2 - x1
+    const newHeight = y2 - y1
+
+    const tnCanvas = document.createElement('canvas')
+    const tnCanvasContext = tnCanvas.getContext('2d')
+
+    tnCanvas.width = newWidth
+    tnCanvas.height = newHeight
+
+
+    /* now we use the drawImage method to take the
+    pixels from our bufferCanvas and draw them into our thumbnail canvas */
+    tnCanvasContext.drawImage(
+      bufferCanvas, x1, y1, newWidth * ratio,
+      newHeight * ratio, 0, 0, newWidth, newHeight
+    )
+    return tnCanvas.toDataURL()
+  }
+
+  setDimensions = () => {
+    if (!this.container) {
+      this.container = document.getElementById(this.containerId)
+    }
+    this.setState({
+      width: this.container.clientWidth,
+      height: this.container.clientHeight
+    })
+    // const style = window.getComputedStyle(this.container, null)
+    // (style.getPropertyValue('padding-left') + style.getPropertyValue('padding-right'))
+    const img = new Image()
+    img.onload = () => {
+      this.setState({ originalWidth: img.width, originalHeight: img.height })
+    }
+    img.src = this.props.src
+  }
+
+  redrawImage = (imgNode) => {
+    console.log('redrawImage', this.props)
+    if (!imgNode) return
+    // console.log('Loading cropped image', this.props.src)
+    // const timestamp = Date.now()
+    // console.time(`CROP ${timestamp}`)
+    let loadTimer
+    const imgObj = new Image()
+    const onPreloadComplete = () => {
+      // console.timeEnd(`LOAD ${timestamp}`)
+      // call the methods that will create a 64-bit version of thumbnail here.
+      const {
+        x1, y1, x2, y2
+      } = this.props
+      // console.time(`CROPPING ${timestamp}`)
+      const newImg = this.getImagePortion({
+        imgObj, x1, y1, x2, y2
+      })
+      // place image in appropriate div
+      /* eslint-disable no-param-reassign */
+      imgNode.setAttribute('crossOrigin', 'Anonymous')
+      imgNode.crossOrigin = 'Anonymous'
+      imgNode.src = newImg
+      // console.timeEnd(`CROPPING ${timestamp}`)
+      // console.timeEnd(`CROP ${timestamp}`)
+      /* eslint-enable no-param-reassign */
+    }
+
+    const onImgLoaded = () => {
+      if (loadTimer != null) clearTimeout(loadTimer)
+      if (!imgObj.complete) {
+        loadTimer = setTimeout(() => {
+          onImgLoaded()
+        }, 3)
+      } else {
+        onPreloadComplete()
+      }
+    }
+
+    imgObj.setAttribute('crossOrigin', 'Anonymous')
+    imgObj.crossOrigin = 'Anonymous'
+    // console.time(`LOAD ${timestamp}`)
+    imgObj.src = this.props.src
+    imgObj.onLoad = onImgLoaded()
+    imgObj.onerror = (err) => {
+      console.warn('err', err)
+      /* eslint-disable no-param-reassign */
+      imgNode.src = this.props.src
+      /* eslint-enable no-param-reassign */
+    }
+  }
+
+  drawCroppedImage = (img = this.props) => {
+    const {
+      x1, y1, x2, y2, src
+    } = img
+    if (!src) {
+      return
+    }
+    if (!this.imgNode) {
+      this.imgNode = document.getElementById(this.id)
+    }
+    if (Number.isNaN(parseInt(x1, 10)) || Number.isNaN(parseInt(y1, 10))
+      || Number.isNaN(parseInt(x2, 10)) || Number.isNaN(parseInt(y2, 10))) {
+      this.imgNode.src = src
+      return
+    }
+    const timestamp = Date.now()
+    console.time(`TOTAL ${timestamp}`)
+    this.setState({ loading: true })
+    console.log('drawCroppedImage', img)
+    let loadTimer
+    const onPreloadComplete = () => {
+      console.timeEnd(`LOAD ${timestamp}`)
+      console.time(`CROP ${timestamp}`)
+      const newImg = this.getImagePortion({
+        imgObj: this.imgObject, x1, y1, x2, y2
+      })
+      console.timeEnd(`CROP ${timestamp}`)
+      this.imgNode.setAttribute('crossOrigin', 'Anonymous')
+      this.imgNode.crossOrigin = 'Anonymous'
+      console.time(`SET ${timestamp}`)
+      this.imgNode.src = newImg
+      console.timeEnd(`SET ${timestamp}`)
+      if (this.mounted) {
+        this.setState({ loading: false })
+      }
+    }
+    const onImgLoaded = () => {
+      if (loadTimer != null) clearTimeout(loadTimer)
+      if (this.imgObject) {
+        if (!this.imgObject.complete) {
+          loadTimer = setTimeout(() => {
+            onImgLoaded()
+          }, 3)
+        } else {
+          onPreloadComplete()
+        }
+      }
+    }
+    this.imgObject.setAttribute('crossOrigin', 'Anonymous')
+    this.imgObject.crossOrigin = 'Anonymous'
+    console.time(`LOAD ${timestamp}`)
+    this.imgObject.src = src
+    this.imgObject.onLoad = onImgLoaded()
+    this.imgObject.onerror = (err) => {
+      console.warn('err', err)
+      this.imgNode.src = src
+      if (this.mounted) {
+        this.setState({ loading: false })
+      }
+    }
+  }
+
+  render() {
+    // const {
+    //   x1, y1, x2, y2, src, className, style
+    // } = this.props
+    // if (!x1 || !y1 || !x2 || !y2) {
+    //   return <img id={this.id} src={src} style={style} className={className} alt="original" />
+    // }
+    // console.log('render', this.props)
+    const {
+      className = '', style, src, x1, y1, x2, y2
+    } = this.props
+    const cropped = !(Number.isNaN(parseInt(x1, 10)) || Number.isNaN(parseInt(y1, 10))
+      || Number.isNaN(parseInt(x2, 10)) || Number.isNaN(parseInt(y2, 10)))
+    let imgStyle = {
+      width: '100%'
+    }
+    let containerStyle = {
+      overflow: 'hidden',
+      maxWidth: '100%',
+      maxHeight: '100%'
+    }
+    if (cropped) {
+      const scale = this.state.width ? this.state.width / (x2 - x1) : 1
+      imgStyle = {
+        width: `${(this.state.originalWidth * scale)}px` || '100%',
+        height: `${(this.state.originalHeight * scale)}px` || '100%',
+        marginTop: `-${y1 * scale}px`,
+        marginLeft: `-${x1 * scale}px`
+      }
+      containerStyle = {
+        ...containerStyle,
+        width: (x2 - x1) * scale,
+        height: (y2 - y1) * scale
+      }
+      console.log('CROPPED', cropped, imgStyle, scale, this.props)
+    }
+    // return (
+    //   <div id={this.containerId} style={style} className={`clipImg ${className}`}>
+    //     <img id={this.id} alt="" />
+    //     {this.state.loading && <img className="clipLoader" src={loading} alt="loading" />}
+    //   </div>
+    // )
+    return (
+      <div style={style} className={className}>
+        <div id={this.containerId} style={containerStyle}>
+          <img src={src} alt="" style={imgStyle} />
+        </div>
+        {this.state.loading && <img className="clipLoader" src={loading} alt="loading" />}
+      </div>
+    )
+  }
+}

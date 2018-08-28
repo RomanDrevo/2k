@@ -1,0 +1,154 @@
+{
+  "total_paid": 6255.0,
+  "currency": "USD",
+  "withdrawl_history": [
+    {
+      "date": "2017-11-11",
+      "deposited_to": "Credit Card Ending 3621",
+      "tax_paid_percent": 30.0,
+      "tax_paid_amount": 30.0,
+      "paid_amount": 100.0,
+      "paid_currency": "USD"
+    },
+    {
+      "date": "2017-08-21",
+      "deposited_to": "Credit Card Ending 3621",
+      "tax_paid_percent": 30.0,
+      "tax_paid_amount": 320.0,
+      "paid_amount": 1120.0,
+      "paid_currency": "USD"
+    },
+    {
+      "date": "2017-16-09",
+      "deposited_to": "Credit Card Ending 3621",
+      "tax_paid_percent": 30.0,
+      "tax_paid_amount": 540.0,
+      "paid_amount": 184.0,
+      "paid_currency": "USD"
+    }
+  ],
+  "my_earnings": {
+    "business_summary": [
+      {
+        "business_name": "INT College",
+        "business_id": 29,
+        "business_profile_pic_url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/20108428_1592029970831596_1309529856870764565_n.jpg?oh=d904cf6363bb508fdaa385d5de430809&oe=5A519A21",
+        "business_profile_pic_media_id": null,
+        "total_earnings": 120.0,
+        "last_activity": "11-11-2017",
+        "balance_to_cash": 45.0,
+        "currency": "USD"
+      },
+      {
+        "business_name": "BodyFlow",
+        "business_id": 30,
+        "business_profile_pic_url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/11150677_835051463251960_5540652145275580999_n.jpg?oh=6aa6c4d4fe5ba88d74f0a70a2a9e8860&oe=5A5768B5",
+        "business_profile_pic_media_id": null,
+        "total_earnings": 1200.0,
+        "last_activity": "12-12-2017",
+        "balance_to_cash": 800.0,
+        "currency": "USD"
+      },
+      {
+        "business_name": "Wonderfood",
+        "business_id": 31,
+        "business_profile_pic_url": "https://scontent.xx.fbcdn.net/v/t1.0-1/p50x50/10268447_481156595351569_5434463503526439294_n.jpg?oh=7747a2884653b312153a3edd94da68a8&oe=5A3A4996",
+        "business_profile_pic_media_id": null,
+        "total_earnings": 543.0,
+        "last_activity": "12-01-2017",
+        "balance_to_cash": 135.0,
+        "currency": "USD"
+      }
+    ],
+    "business_id_to_campaigns": {
+      "29": [
+        {
+          "campaign_headline": "Master The SAP",
+          "campaign_id": 55,
+          "media_type": "IMAGE",
+          "campaign_image_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/27/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg",
+          "campaign_image_media_id": 212,
+          "media_x1": null,
+          "media_y1": null,
+          "media_x2": null,
+          "media_y2": null,
+          "total_earnings": 859.0,
+          "balance_to_cash": 123.0,
+          "currency": "USD",
+          "last_activity": "11-27-2017"
+        },
+        {
+          "campaign_headline": "Master E-commerce",
+          "campaign_id": 53,
+          "media_type": "IMAGE",
+          "campaign_image_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/23/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg",
+          "campaign_image_media_id": 170,
+          "media_x1": null,
+          "media_y1": null,
+          "media_x2": null,
+          "media_y2": null,
+          "total_earnings": 932.0,
+          "balance_to_cash": 432.0,
+          "currency": "USD",
+          "last_activity": "12-03-2017"
+        },
+        {
+          "campaign_headline": "Master The Full Stack",
+          "campaign_id": 54,
+          "media_type": "IMAGE",
+          "campaign_image_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/26/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg",
+          "campaign_image_media_id": 191,
+          "total_earnings": 321.0,
+          "balance_to_cash": 54.0,
+          "currency": "USD",
+          "last_activity": "11-01-2017"
+        }
+      ],
+      "30": [
+        {
+          "campaign_headline": "what a nice campaign",
+          "campaign_id": 56,
+          "media_type": "IMAGE",
+          "campaign_image_url": "https://scontent.xx.fbcdn.net/v/t1.0-9/s720x720/20108509_1592030204164906_947541567157716282_n.jpg?oh=66ce8cb2b347a72b536ee3dbf0cf52a1&oe=5A3FA748",
+          "campaign_image_media_id": 52,
+          "media_x1": 20,
+          "media_y1": 20,
+          "media_x2": 250,
+          "media_y2": 220,
+          "total_earnings": 97.0,
+          "balance_to_cash": 0.0,
+          "currency": "USD",
+          "last_activity": "2016-01-13"
+        },
+        {
+          "campaign_headline": "an incredibly savvy contract",
+          "campaign_id": 98,
+          "media_type": "IMAGE",
+          "campaign_image_url": "https://2key-staging-businesses.s3.amazonaws.com/media/29/images%20%287%29.jpeg",
+          "campaign_image_media_id": 352,
+          "media_x1": 10,
+          "media_y1": 10,
+          "media_x2": 130,
+          "media_y2": 50,
+          "total_earnings": 499.9,
+          "balance_to_cash": 101.0,
+          "currency": "USD",
+          "last_activity": "2017-03-19"
+        }
+      ],
+      "31": [
+        {
+          "campaign_headline": "a blissful experience",
+          "campaign_id": 777,
+          "media_type": "IMAGE",
+          "campaign_image_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/23/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg",
+          "campaign_image_media_id": 876,
+          "total_earnings": 32,
+          "balance_to_cash": 1.4,
+          "currency": "USD",
+          "last_activity": "2017-12-13"
+        }
+      ]
+    }
+  }
+}

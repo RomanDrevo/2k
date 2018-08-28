@@ -1,0 +1,28 @@
+/*
+response from POST/hosted with payload:
+{
+	"product_id":59,
+	"name": "RawFood",
+	"original_landing_page_url":"http://wonderfood.ravpage.co.il/%D7%A7%D7%95%D7%A8%D7%A1%20%D7%A8%D7%95%20%D7%A4%D7%95%D7%93%20%D7%95%D7%A1%D7%95%D7%A4%D7%A8%D7%A4%D7%95%D7%93"
+}
+*/
+{
+    "hosted_site": {
+        "duplicated_at": null,
+        "screenshot_url": null,
+        "thumbnail_url": null,
+        "business_id": 30,
+        "name": "RawFood",
+        "last_update_at": null,
+        "id": 36,
+        "is_duplication_ready": false,
+        "duplicate_site_classic_index_html_max_path": null,
+        "screenshot_media_id": null,
+        "thumbnail_media_id": null,
+        "original_landing_page_url": "http://wonderfood.ravpage.co.il/%D7%A7%D7%95%D7%A8%D7%A1%20%D7%A8%D7%95%20%D7%A4%D7%95%D7%93%20%D7%95%D7%A1%D7%95%D7%A4%D7%A8%D7%A4%D7%95%D7%93",
+        "product_id": 59,
+        "created_at": "2017-09-26T17:51:15.612001+00:00",
+        "entrypoint_short_url": null,
+        "duplicate_site_any_html_max_path": null
+    }
+}

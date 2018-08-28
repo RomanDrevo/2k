@@ -1,0 +1,36 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import Modal from 'react-modal'
+import man_icon from '../../../icons/man_holding.png'
+import { Button, InfoTooltip, TextInput } from '../../../components/_common'
+
+require('./!!!start-compaign-modal.css')
+
+export default class StartCompaignModal extends React.Component {
+    static propTypes = {
+      isOpen: PropTypes.bool,
+      onClose: PropTypes.func
+    }
+    render() {
+      const { isOpen, onClose } = this.props
+
+      return (
+        <Modal
+          className="start-compaign-modal compaign-container"
+          isOpen={isOpen}
+          onRequestClose={this.onClose}
+          closeTimeoutMS={100}
+          shouldCloseOnOverlayClick={false}
+        >
+          <div className="start-compaign-box">
+            <div className="start-compaign-close"><i className="fa fa-close" /></div>
+            <div className="start-compaign-text">Let's insert your first Campaign</div>
+            <div className="flex-center"><img src={man_icon} className="start-compaign-icon" /></div>
+            <div className="flex-center">
+              <Button title="Start" onClick={() => onClose()} />
+            </div>
+          </div>
+        </Modal>
+      )
+    }
+}

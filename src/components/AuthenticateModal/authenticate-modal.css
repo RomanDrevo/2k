@@ -1,0 +1,86 @@
+.authenticate {
+  font-family: 'Roboto', Helvetica, sans-serif; }
+  .authenticate button {
+    cursor: pointer;
+    outline: 0; }
+    .authenticate button:focus {
+      outline: 0; }
+  .authenticate.login-container {
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .authenticate .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .authenticate .login-box {
+    width: 475px;
+    padding: 27px 27px 16px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #ccc;
+    border-radius: 5px;
+    border-top: 1px solid #e9e9e9;
+    color: #95989a; }
+  .authenticate .login-header {
+    text-align: center; }
+    .authenticate .login-header .left {
+      background-color: transparent;
+      border-width: 0px;
+      padding: 10px 0px;
+      font-weight: 300;
+      color: #95989a;
+      float: left !important; }
+    .authenticate .login-header .right {
+      width: 80.9px;
+      padding: 5px 23.2px;
+      border: solid 2px #1A936F;
+      border-radius: 25px;
+      color: #1A936F;
+      font-size: 15px;
+      font-weight: bold;
+      float: right !important; }
+  .authenticate .login-contents {
+    clear: both;
+    padding: 20px 30px 10px; }
+  .authenticate .login-facebook {
+    width: 255px;
+    height: 40px;
+    color: #fff;
+    background-color: #2e71cd;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 300; }
+  .authenticate .login-social {
+    font-size: 15px;
+    text-align: center;
+    color: #434343; }
+    .authenticate .login-social .google {
+      background-color: transparent;
+      border-width: 0px;
+      color: #d01818;
+      padding: 0; }
+    .authenticate .login-social .linkedin {
+      background-color: transparent;
+      border-width: 0px;
+      padding: 0;
+      color: #0077B5; }
+  .authenticate .line {
+    background-color: #434343;
+    height: 1px; }
+  .authenticate .or {
+    font-size: 20px;
+    padding: 10px; }
+  .authenticate .login-signup {
+    text-align: center;
+    padding-top: 14.5px; }
+    .authenticate .login-signup .signup {
+      font-family: 'Roboto', Helvetica, sans-serif;
+      background-color: transparent;
+      border-width: 0px;
+      color: #1A936F; }
+  .authenticate .error-message {
+    display: none; }
+  .authenticate .grecaptcha-badge {
+    display: none; }

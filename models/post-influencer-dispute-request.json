@@ -1,0 +1,12 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/influencer/dispute schema",
+  "type" : "object",
+  "properties" : {
+    "campaign_id":{"type":"integer"},
+    "campaign_lead_id" : { "type" : "integer" },
+    "dispute_reason": {"type":"string"},
+    "disputer_contact_number": {"type":"string","description":"contact number for the party initiating the dispute"}
+  },
+  "required": ["campaign_lead_id","dispute_reason","disputer_contact_number"]
+}

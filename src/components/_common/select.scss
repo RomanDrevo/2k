@@ -1,0 +1,129 @@
+@import "vars";
+.select-container {
+  display: flex;
+  padding: 4px 0;
+  text-align: left;
+
+  &:disabled {
+    background: #ecebeb !important;
+  }
+
+  .select-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+
+  .select-content {
+    position: relative;
+    flex: 1;
+    width: 100%;
+
+
+    &.white {
+      .select-trigger-wrapper {
+        background: #FFF;
+
+        &:hover {
+          background: #FFF;
+        }
+      }
+
+      .select-list-wrapper {
+        background: #FFF;
+      }
+    }
+
+    .select-trigger-wrapper {
+      display: flex;
+      background: #EEEEEE;
+      border: 1px solid #95989A;
+      //height: 30px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+      color: #434343;
+      cursor: pointer;
+      
+      &:hover {
+        background: #E0E0E0;
+      }
+      
+      &.disabled {
+        background: #ecebeb;
+        color: #95989A;
+        cursor: default;
+      }
+
+      &.rounded {
+        border-radius: 5px;
+      }
+
+      &.no-shadow {
+        box-shadow: none;
+      }
+
+      .select-trigger-title {
+        padding: 6px;
+        font-weight: bold;
+        border-right: 1px solid #95989A;
+        font-size: 14px;
+        line-height: 24px;
+      }
+      .select-trigger-value {
+        flex: 1;
+        padding: 6px;
+        min-width: 100px;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+      .select-trigger-icon {
+        padding: 6px;
+      }
+    }
+
+    .select-list-wrapper {
+      position: absolute;
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      background: #EEEEEE;
+      border: 1px solid #95989A;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+      z-index: 10000;
+      cursor: pointer;
+
+
+      .select-list-item {
+        border-bottom: 1px solid #95989A;
+        color: #434343;
+        padding: 3px;
+
+        &:last-child {
+          border-bottom: none;
+        }
+
+        &.selected {
+          background: $light-green;
+          color: white;
+        }
+        &:hover {
+          // background: #E0E0E0;
+          background: #1a936f;
+          color: #fff;
+        }
+      }
+
+      .loading-indicator {
+        text-align: center;
+
+        i {
+          font-size: 12px;
+          color: rgba(0,0,0,0.3);
+        }
+      }
+    }
+  }
+}

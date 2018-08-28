@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "PUT/media schema",
+  "type" : "object",
+  "properties" : {
+    "media_id" : { "type" : "integer" },
+    "add_to_my_lib":{"type": "boolean"},
+    "remove_from_my_lib":{"type": "boolean"},
+    "x1":{"type":"integer","description": "(x1,y1) is upper left point of default crop, in pixels (0,0) is upper left corner of image"},
+    "y1":{"type":"integer","description": "(x1,y1) is upper left point of default crop, in pixels (0,0) is upper left corner of image"},
+    "x2":{"type":"integer","description": "(x2,y2) is lower right point of default crop, in pixels (0,0) is upper left corner of image"},
+    "y2":{"type":"integer","description": "(x2,y2) is lower right point of default crop, in pixels (0,0) is upper left corner of image"}
+  },
+  "required": ["media_id"]
+}

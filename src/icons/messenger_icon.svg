@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7323 2696 70 67.58">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4d4d4d;
+        font-size: 14px;
+        font-family: Helvetica;
+      }
+
+      .cls-2 {
+        fill: #0083ff;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #137fe6;
+      }
+    </style>
+  </defs>
+  <g id="Group_2399" data-name="Group 2399" transform="translate(7095 518)">
+    <text id="Messenger" class="cls-1" transform="translate(230 2241.58)"><tspan x="0" y="0">Messenger</tspan></text>
+    <g id="Group_2368" data-name="Group 2368" transform="translate(-106 -11)">
+      <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-2" cx="23" cy="23" r="23" transform="translate(348 2189)"/>
+      <g id="Group_2367" data-name="Group 2367" transform="translate(67 17.555)">
+        <path id="Path_1213" data-name="Path 1213" class="cls-3" d="M303.567,2181.12c-8.038,0-14.587,6.179-14.587,13.794a13.489,13.489,0,0,0,5.279,10.622v5.15l4.968-2.6a15.349,15.349,0,0,0,4.341.622c8.038,0,14.587-6.179,14.587-13.794S311.627,2181.12,303.567,2181.12Z" transform="translate(0.044 -1.475)"/>
+        <path id="Path_1214" data-name="Path 1214" class="cls-4" d="M298.1,2207.323l6.653-3.565,3.449,3.686,7.13-7.844-6.657,3.565-3.444-3.444Z" transform="translate(-3.22 -9.565)"/>
+      </g>
+    </g>
+  </g>
+</svg>

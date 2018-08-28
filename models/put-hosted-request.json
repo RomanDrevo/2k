@@ -1,0 +1,13 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "PUT/hosted schema",
+  "type" : "object",
+  "properties" : {
+    "product_id" : { "type" : "integer" },
+    "hosted_id" : { "type" : "integer" },
+    "name": {"type": "string", "description":"must be unique within business"},
+    "original_landing_page_url": {"type":"string"}
+
+  },
+  "required": ["product_id","hosted_id"]
+}

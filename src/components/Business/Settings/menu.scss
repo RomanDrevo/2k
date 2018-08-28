@@ -1,0 +1,47 @@
+@import "vars";
+
+.settings-menu-container {
+  width: 230px;
+  text-align: left;
+  height: 100%;
+
+  .menu-item {
+    color: $text-gray;
+
+    &.selected {
+      font-weight: 700;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  div {
+    height: 40px;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+
+  .business-logo {
+    height: auto;
+    padding-left: 0;
+
+    .logo-wrapper {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      padding: 0;
+      // padding-bottom: 25px;
+      // margin-bottom: 25px;
+      >div {
+        width: 160px;
+        height: 160px;
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 15px;
+      }
+    }
+    border-bottom: 1px solid #BEBFC0;
+  }
+}

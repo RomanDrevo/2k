@@ -1,0 +1,49 @@
+@import "vars";
+.step-bar-container {
+  display: flex;
+  height: 60px;
+  background: #F2F2F2;
+  padding: 10px;
+
+  .step-bar-step-wrapper {
+
+    .step-bar-step-circle {
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      border: 2px solid $light-green;
+      background: $light-green;
+      color: white;
+      margin: auto;
+      text-align: center;
+      padding: 2px;
+      display: inline-block;
+      cursor: pointer;
+
+      &.active {
+        background: white;
+        color: $light-green;
+      }
+    }
+
+    .step-bar-step-hyphen {
+      display: inline-block;
+      width: 50px;
+      height: 2px;
+      background: $light-green;
+      margin-top: 15px;
+      vertical-align: top;
+      &.hidden {
+        background: none;
+      }
+    }
+  }
+
+  .step-bar-step-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #747474;
+    text-align: center;
+    cursor: pointer;
+  }
+}

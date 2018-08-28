@@ -1,0 +1,10 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/twokey schema",
+  "type" : "object",
+  "properties" : {
+    "campaign_id" : { "type" : "integer" },
+    "business_id" : { "type" : "integer" }
+    },
+  "required": ["campaign_id","business_id"]
+}

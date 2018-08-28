@@ -1,0 +1,17 @@
+.campaignPanel {
+  .select-container {
+    &.flex {
+      align-items: center;
+    }
+    
+    .btn {
+      &.middle {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.new-site-wrapper {
+  min-height: 172px;
+}

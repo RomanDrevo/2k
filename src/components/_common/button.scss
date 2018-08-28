@@ -1,0 +1,130 @@
+.btn {
+  height: 38px;
+  padding: 0 20px;
+  font-family: Roboto;
+  font-size: 16px;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &.disabled {
+    opacity: 1;
+  }
+
+  &.rounded {
+    border-radius: 19px !important;
+  }
+
+
+  &.small {
+    height: 20px;
+    font-size: 14px;
+    padding: 0 10px;
+    &.rounded {
+      border-radius: 10px !important;;
+    }
+  }
+
+  &.middle {
+    height: 26px;
+    font-size: 13px;
+    padding: 0 10px;
+    &.rounded {
+      border-radius: 13px !important;;
+    }
+  }
+
+  &.default {
+    background: #57D589;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16);
+    color: #FFF;
+
+    &.loading {
+      background: #ccc url('./rolling-loading.svg') no-repeat center center;
+      background-size: 85% 85%;
+      &:hover {
+        background: #ccc url('./rolling-loading.svg') no-repeat center center;
+        background-size: 85% 85%;
+        cursor:default;
+      }
+    }
+
+    &:hover {
+      background: #43BE74;
+    }
+    &:active {
+      background: #57D589;
+      box-shadow: none;
+    }
+    &.disabled {
+      background: #EAEAEA;
+      color: #A7AAAB;
+    }
+  }
+  &.select {
+    background: #EEEEEE;
+    border: 1px solid #95989A;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16);
+    color: #434343;
+
+    &:hover {
+      background: #E0E0E0;
+    }
+    &.disabled {
+      background: #EEEEEE;
+      color: #A7AAAB;
+    }
+  }
+  &.cancel {
+    background: #95989A;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.16);
+    color: #FFF;
+
+    &:hover {
+      background: #95989A;
+    }
+    &:active {
+      background: #95989A;
+      box-shadow: none;
+    }
+  }
+  &.transparent {
+    background: transparent !important;
+  }
+
+  &.swal {
+    height: 38px !important;
+    font-size: 16px !important;
+    font-weight: normal !important;
+    border-left-color: unset !important;
+    border-right-color: unset !important;
+
+    &.confirm {
+      background: #57D589 !important;
+    }
+
+    &.cancel {
+      background: #95989A;
+    }
+
+    &.black-color {
+      color: #434343;
+    }
+  }
+}
+
+.invalid {
+  .btn {
+    opacity: 1;
+
+    &.select {
+      background: #EEEEEE;
+      color: #A7AAAB;
+    }
+
+    &.default {
+      background: #EAEAEA;
+      color: #A7AAAB;
+    }
+  }
+}
+

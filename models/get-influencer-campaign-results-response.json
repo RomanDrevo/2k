@@ -1,0 +1,38 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "GET/influencer/campaign/results schema",
+  "description":"response from GET/influencer/campaign/results with params: campaign_id",
+  "type" : "object",
+  "properties" : {
+    "lifetime_results":{
+        "type":"object",
+        "properties":{
+            "reach":{"type":"integer"},
+            "conversions":{"type":"integer"},
+            "convertion_rate":{"type":"number"},
+            "total_earnings":{"type":"number"},
+            "currency":{"type":"string"},
+            "avg_cpa":{"type":"number"},
+            "rejected":{"type":"integer"}
+        }
+    },
+    "leads":{
+        "type":"array",
+        "items":{
+            "type":"object",
+            "properties":{
+                "campaign_lead_id":{"type":"integer"},
+                "date":{"type":"string","description":"date iso-format"},
+                "lead_name":{"type":"string"},
+                "lead_email":{"type":"string"},
+                "lead_contact_number":{"type":"string"},
+                "verification_status":{"type":"string","description":"one of APPROVED/REJECTED/PENDING"},
+                "rejection_type":{"type":"string","description":"one of DUPLICATE/FAKE/NO_RESPONSE/OTHER"},
+                "rejection_text":{"type":"string","description":"if rejection_type==OTHER, this might be non-null"},
+                "lead_value":{"type":"number","description":"the Earn per lead"},
+                "currency":{"type":"string","description":"currency for the earn per lead"}
+            }
+        }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.business-header-cube {
+  border: 1px solid #D1D1D1;
+  padding: 10px 15px; }
+
+.business-profile .pic {
+  width: 250px;
+  height: 250px;
+  overflow: hidden; }
+
+.business-header-cover img {
+  width: 100%; }
+
+.business-header-cover h1 {
+  font-size: 30px; }
+
+.business-header-cover span.location {
+  font-size: 24px; }
+
+.business-header-about h3 {
+  font-size: 24px; }

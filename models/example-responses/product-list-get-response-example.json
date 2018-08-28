@@ -1,0 +1,77 @@
+//this is the response when sending GET/product/list with params: business_id=29 , fields=id&name
+{
+    "items": [
+        {
+            "id": 46,
+            "name": "MCSA Course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 47,
+            "name": "Linux Course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 49,
+            "name": "קורס מסחר מקוון",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 50,
+            "name": "קורס פול סטאק",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 51,
+            "name": "SAP applications course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 52,
+            "name": "IOT course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 53,
+            "name": "BA Analysis Course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 54,
+            "name": "Android Course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 55,
+            "name": "EBAY קורס",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 56,
+            "name": "קורס סייבר",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 57,
+            "name": "DataScience Course",
+            "user_role": "owner",
+            "entity_type": "Product"
+        },
+        {
+            "id": 48,
+            "name": "קורס אמזון",
+            "user_role": "owner",
+            "entity_type": "Product"
+        }
+    ]
+}

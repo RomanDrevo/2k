@@ -1,0 +1,20 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "PUT/campaign/results schema",
+  "description":"request body model for PUT/campaign/results",
+  "type" : "object",
+  "properties" : {
+    "leads":{
+        "type":"array",
+        "items":{
+            "type":"object",
+            "properties":{
+                "campaign_lead_id":{"type":"integer"},
+                "verification_status":{"type":"string","description":"one of APPROVED/REJECTED/PENDING"},
+                "rejection_type":{"type":"string","description":"one of DUPLICATE/FAKE/NO_RESPONSE/OTHER"},
+                "rejection_text":{"type":"string","description":"if rejection_type==OTHER, this might be non-null"}
+            }
+        }
+    }
+  }
+}

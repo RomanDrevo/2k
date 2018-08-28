@@ -1,0 +1,153 @@
+.onBoarding-overlay {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0) !important;
+  z-index: 8;
+  
+  &.mobile {
+    display: flex;
+    position: fixed;
+    max-width: 100vw;
+    max-height: 100vh;
+    background: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1040;
+  }
+}
+
+.onBoarding {
+  position: relative;
+  width: 85%;
+  min-height: 85vh;
+  margin: 650px auto auto;
+  padding: 30px;
+  border: 3px solid #1a936f;
+  border-radius: 20px;
+  background: rgb(247, 247, 247);
+  color: #434343;
+  z-index: 9;
+
+  &.mobile {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 30px 0;
+    border-radius: 0;
+    box-sizing: border-box;
+    z-index: 1050;
+
+    .slick-dots {
+      li {
+        &.slick-active {
+          button {
+            &:before {
+              opacity: 1;
+              color: #1a936f;
+            }
+          }
+        }
+  
+        button {
+          &:before {
+            font-size: 14px;
+          }
+  
+          &:focus {
+            &:before {
+              color: #1a936f;
+            }
+          }
+        }
+      }
+    }
+
+    .closeContainer {
+      margin: -20px 10px 0 0;
+    }
+
+    .onboardItem {
+      padding-bottom: 50px;
+
+      img {
+        width: 200px;
+        margin: 30px auto;
+      }
+    }
+  }
+  
+  .closeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: -20px -10px 0 0;
+
+    i {
+      color: #ccc;
+
+      &:hover {
+        color: #ddd;
+      }
+    }
+  }
+
+  .onboardItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+
+    img {
+      width: 120px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    p {
+      height: 50px;
+      max-width: 220px;
+      margin: 0 auto 1rem;
+      text-align: center;
+    }
+  }
+
+  .modal-header {
+    display: block;
+    padding: 0;
+
+    h2 {
+      margin-top: 5px;
+    }
+  }
+
+  .faq {
+    margin-top: 10px;
+
+    h4 {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 14px;
+      color: #96999b;
+    }
+  }
+
+  .footerContainer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+
+    p {
+      width: 100%;
+      margin-top: 20px;
+      text-align: center;
+    }
+  }
+}

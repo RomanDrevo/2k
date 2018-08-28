@@ -1,0 +1,40 @@
+.number-input-container.inline .field-label {
+  margin-right: 5px; }
+
+.number-input-container .number-input-value-wrapper {
+  width: 120px;
+  height: 38px;
+  border: 1px solid transparent; }
+  .number-input-container .number-input-value-wrapper:hover {
+    border: 1px solid #57d589; }
+  .number-input-container .number-input-value-wrapper.focused {
+    border: 2px solid #57d589; }
+  .number-input-container .number-input-value-wrapper .number-input-value {
+    height: 100%;
+    padding: 6px 3px;
+    background: white;
+    color: #747474;
+    font-size: 16px; }
+  .number-input-container .number-input-value-wrapper input {
+    height: 100%; }
+
+.number-input-container .number-input-control-wrapper {
+  margin-left: 2px; }
+  .number-input-container .number-input-control-wrapper .number-input-control {
+    display: block;
+    padding: 0;
+    font-size: 11px;
+    cursor: pointer;
+    border: 1px solid #95989A;
+    color: #95989A;
+    width: 17px;
+    height: 17px;
+    text-align: center;
+    margin: 1px;
+    background: none;
+    outline: none;
+    border-radius: 0; }
+    .number-input-container .number-input-control-wrapper .number-input-control:active {
+      background: gray; }
+    .number-input-container .number-input-control-wrapper .number-input-control i {
+      vertical-align: middle; }

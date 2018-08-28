@@ -1,0 +1,29 @@
+.display-field-container {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #898989;
+  flex: 1;
+  padding: 2px;
+  justify-content: center;
+  align-items: center; }
+  .display-field-container.large {
+    font-size: 18px; }
+  .display-field-container.black {
+    color: #434343; }
+  .display-field-container.inverse .display-field-label {
+    font-weight: bold !important; }
+  .display-field-container.inverse .display-field-value {
+    font-weight: normal !important; }
+  .display-field-container.block .display-field-label {
+    display: block !important; }
+  .display-field-container.block .display-field-value {
+    display: block !important; }
+  .display-field-container .display-field-icon {
+    display: inline;
+    margin-right: 5px; }
+  .display-field-container .display-field-label {
+    display: inline;
+    font-weight: normal; }
+  .display-field-container .display-field-value {
+    display: inline;
+    font-weight: bold; }

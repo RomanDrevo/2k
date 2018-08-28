@@ -1,0 +1,46 @@
+//this is the response from GET/hosted/list when called with params:  product_id=48
+{
+  "items": [
+      {
+          "duplicated_at": "2017-09-24T06:38:59.753427+00:00",
+          "screenshot_url": null,
+          "thumbnail_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/21/www.iti-college.co.il/wp-content/uploads/2017/06/WhatsApp-Image-2017-06-11-at-17.34.08.jpg",
+          "business_id": 29,
+          "name": "Amazon Men",
+          "last_update_at": null,
+          "id": 21,
+          "screenshot_media_id": null,
+          "thumbnail_media_id": 141,
+          "original_landing_page_url": "http://bit.ly/iTi_amazon",
+          "product_id": 48,
+          "duplicate_site_classic_index_html_max_path": "static/29/21/www.iti-college.co.il/מיניסייט/nc-קורס-amazon-אין-סוף-להזדמנויות-עסקיות/index.html",
+          "is_duplication_ready": true,
+          "entrypoint_short_url": "https://goo.gl/XdFaHW",
+          "duplicate_site_any_html_max_path": "static/29/21/www.iti-college.co.il/מיניסייט/nc-קורס-amazon-אין-סוף-להזדמנויות-עסקיות/index-2.html",
+          "created_at": "2017-09-24T06:38:19.073924+00:00",
+          "user_role": "guest",
+          "entity_type": "HostedSite"
+      },
+      {
+          "duplicated_at": "2017-09-24T06:39:56.021307+00:00",
+          "screenshot_url": null,
+          "thumbnail_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/22/www.iti-college.co.il/wp-content/uploads/2017/06/WhatsApp-Image-2017-06-11-at-17.34.08.jpg",
+          "business_id": 29,
+          "name": "Amazon Women",
+          "last_update_at": null,
+          "id": 22,
+          "screenshot_media_id": null,
+          "thumbnail_media_id": 156,
+          "original_landing_page_url": "http://bit.ly/iTi_Amazon",
+          "product_id": 48,
+          "duplicate_site_classic_index_html_max_path": "static/29/22/www.iti-college.co.il/מיניסייט/nc-קורס-amazon-תמכרי-ללא-גבולות/index.html",
+          "is_duplication_ready": true,
+          "entrypoint_short_url": "https://goo.gl/2iBZCD",
+          "duplicate_site_any_html_max_path": "static/29/22/www.iti-college.co.il/מיניסייט/nc-קורס-amazon-תמכרי-ללא-גבולות/index-2.html",
+          "created_at": "2017-09-24T06:39:24.819933+00:00",
+          "user_role": "guest",
+          "entity_type": "HostedSite"
+      }
+  ],
+  "type": "by parent product id"
+}

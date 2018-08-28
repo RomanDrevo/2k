@@ -1,0 +1,32 @@
+.profile-settings-container .cancel-btn {
+  margin-left: 10px;
+  cursor: pointer; }
+
+.profileSelect .select-trigger-wrapper {
+  height: 38px; }
+  .profileSelect .select-trigger-wrapper > div {
+    line-height: 24px; }
+
+.profile-photo-add {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  bottom: -5px; }
+
+.phone-value {
+  align-content: center;
+  align-items: center; }
+
+.phone-wrapper {
+  flex-grow: 1;
+  height: 38px;
+  margin: 4px auto;
+  padding: 3px 6px;
+  border: 1px solid #95989a;
+  border-radius: 5px; }
+  .phone-wrapper .rrui__input-field {
+    border-bottom: 0; }
+  .phone-wrapper .rrui__select__button {
+    border-bottom: 0; }
+  .phone-wrapper .react-phone-number-input__icon-image {
+    vertical-align: top; }

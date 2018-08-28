@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-16521 2348 286 252">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #747474;
+        font-size: 22px;
+        font-family: Roboto-Regular, Roboto;
+      }
+
+      .cls-2, .cls-3, .cls-5 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #e3e3e3;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_3986" data-name="Group 3986" transform="translate(-16585 1976)">
+    <text id="There_are_no_favorites_yet_" data-name="There are no favorites yet " class="cls-1" transform="translate(64 590)"><tspan x="19.153" y="21">There are no favorites yet </tspan></text>
+    <g id="Symbol_89_1" data-name="Symbol 89 – 1">
+      <path id="Path_2025" data-name="Path 2025" class="cls-2" d="M692.739,1509.19a32.934,32.934,0,0,0-25.934,12.47,32.933,32.933,0,0,0-25.934-12.47c-18.273.188-32.941,14.579-32.79,32.172a31.689,31.689,0,0,0,9.143,22.269l46.261,45.611,3.32,3.274,3.32-3.274,45.39-44.747a31.443,31.443,0,0,0,7.642-34.918A33.534,33.534,0,0,0,692.739,1509.19Z" transform="translate(-460.579 -1080.954)"/>
+      <g id="Ellipse_136" data-name="Ellipse 136" class="cls-3" transform="translate(107 372)">
+        <circle class="cls-4" cx="100" cy="100" r="100"/>
+        <circle class="cls-5" cx="100" cy="100" r="98.5"/>
+      </g>
+      <g id="Ellipse_137" data-name="Ellipse 137" class="cls-3" transform="translate(198.999 480)">
+        <ellipse class="cls-4" cx="8" cy="7.5" rx="8" ry="7.5"/>
+        <ellipse class="cls-5" cx="8" cy="7.5" rx="6.5" ry="6"/>
+      </g>
+      <g id="Ellipse_138" data-name="Ellipse 138" class="cls-3" transform="translate(215.599 457.934)">
+        <circle class="cls-4" cx="6.066" cy="6.066" r="6.066"/>
+        <circle class="cls-5" cx="6.066" cy="6.066" r="4.566"/>
+      </g>
+      <g id="Ellipse_139" data-name="Ellipse 139" class="cls-3" transform="translate(185.267 457.934)">
+        <circle class="cls-4" cx="6.066" cy="6.066" r="6.066"/>
+        <circle class="cls-5" cx="6.066" cy="6.066" r="4.566"/>
+      </g>
+    </g>
+  </g>
+</svg>

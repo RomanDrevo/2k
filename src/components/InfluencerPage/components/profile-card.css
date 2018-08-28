@@ -1,0 +1,44 @@
+.profile-card-wrapper .profile-pic-wrapper {
+  position: relative; }
+  .profile-card-wrapper .profile-pic-wrapper .profile-pic-top-bg {
+    display: flex;
+    height: 60px;
+    padding: 7px; }
+  .profile-card-wrapper .profile-pic-wrapper .profile-pic-bottom-bg {
+    height: 90px;
+    background: #D1D1D1; }
+  .profile-card-wrapper .profile-pic-wrapper .profile-pic-body {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .profile-card-wrapper .profile-pic-wrapper .profile-pic-body .profile-pic-img {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center; }
+    .profile-card-wrapper .profile-pic-wrapper .profile-pic-body .profile-pic-greeting {
+      text-align: center;
+      font-size: 14px; }
+
+.profile-card-wrapper .greeting-txt {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 100;
+  color: #000;
+  padding: 5px; }
+  @media (max-width: 550px) {
+    .profile-card-wrapper .greeting-txt {
+      color: #434343;
+      padding: 1px; } }
+  .profile-card-wrapper .greeting-txt .username {
+    margin-left: 2px;
+    font-weight: 400; }
+
+.profile-card-wrapper .no-results {
+  padding: 10px;
+  text-align: center; }

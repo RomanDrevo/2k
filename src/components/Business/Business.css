@@ -1,0 +1,21 @@
+.business {
+  width: 600px;
+  margin: 40px auto 0; }
+
+.business-list-menu {
+  text-align: left; }
+  .business-list-menu li {
+    padding: .7rem 0 .7rem 30px;
+    position: relative;
+    display: flex;
+    align-items: center; }
+    .business-list-menu li.active > a {
+      font-weight: 500; }
+    .business-list-menu li:last-child {
+      padding-bottom: 3px; }
+  .business-list-menu li > img {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    border-radius: 2px;
+    border: 1px solid #95989A; }

@@ -1,0 +1,74 @@
+/*
+
+examplre response from POST/business request sent with params:
+
+{
+	"name":"test BodyFlow",
+	"facebook_page_url": "https://www.facebook.com/bodyflow.co.il/"
+}
+(the population of the fb profile info is sent async, so has to be polled for using GET/business until the fields are seen as populated.
+*/
+{
+    "business": {
+        "default_business_language": "HEBREW",
+        "cover_y2": null,
+        "deleted_at": null,
+        "last_update_at": null,
+        "profile_x2": null,
+        "contact_phone_number": null,
+        "location_lat": null,
+        "facebook_page_id": null,
+        "name": "test BodyFlow",
+        "s3_root_path": null,
+        "contact_user": null,
+        "profile_y2": null,
+        "facebook_page_url": null,
+        "headline": null,
+        "s3_media_path": null,
+        "default_advertiser_language": null,
+        "cover_media_url": null,
+        "profile_media_url": null,
+        "facebook_category": null,
+        "description": null,
+        "cover_media_id": null,
+        "default_campaign_language": "HEBREW",
+        "facebook_fan_count": null,
+        "website": null,
+        "profile_media_id": null,
+        "cover_media_type": null,
+        "twokey_am": "erez@2key.co",
+        "location_city": null,
+        "registered_domain": null,
+        "profile_media_type": null,
+        "cover_x1": null,
+        "twokey_csm": "erez@2key.co",
+        "location_country": null,
+        "profile_x1": null,
+        "contact_email": null,
+        "is_deleted": null,
+        "id": 31,
+        "cover_y1": null,
+        "profile_y1": null,
+        "location_long": null,
+        "contact_name": null,
+        "cover_x2": null,
+        "created_at": "2017-09-26T16:34:14.535712+00:00",
+        "deleted_by": null,
+        "profile_crop_ul": {
+            "x": null,
+            "y": null
+        },
+        "profile_crop_lr": {
+            "x": null,
+            "y": null
+        },
+        "cover_crop_ul": {
+            "x": null,
+            "y": null
+        },
+        "cover_crop_lr": {
+            "x": null,
+            "y": null
+        }
+    }
+}

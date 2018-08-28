@@ -1,0 +1,21 @@
+.user-name {
+  cursor: pointer;
+  color: #434343; }
+
+.login-block {
+  margin-left: 10px; }
+
+.header-login {
+  padding: 0;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: #95989a; }
+  .header-login:hover {
+    color: #1a936f; }
+  .header-login:focus {
+    outline: 0; }
+
+.login-devision {
+  margin: 0 5px;
+  color: #95989a; }

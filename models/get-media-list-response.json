@@ -1,0 +1,56 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "GET/media/list schema",
+  "description":"response from GET/media/list with params: business_id, hosted_id",
+  "type" : "object",
+  "properties" : {
+    "my_lib":{
+                "type":"array",
+                "items": {
+                            "type":"object",
+                            "properties":{
+                                "id":{"type":"integer","description":"the media id"},
+                                "created_at":{"type":"string","description":"valid timestamp format 2012-01-19 17:21:00 CST"},
+                                "business_id":{"type":"string","description":"the business_id associated with this media"},
+                                "from_hosted_site_id":{"type":"integer","description":"not null if this media was extracted from this hosted_site id"},
+                                "my_lib_business_id":{"type":"integer","description":"not null if this media is part of 'my gallery' for this business id"},
+                                "type":{"type":"string","description":"one of IMAGE/GIF/VIDEO so the client can render/display accordingly"},
+                                "twokey_url":{"type":"string","description":"the location in 2key servers where this media is stored, if it's internally stored"},
+                                "web_url":{"type":"string","description":"the location on the web where this media is stored, if this media isn't stored in 2key"},
+                                "url":{"type":"string","description":"convenience field, shows the location from which to render, has the value of twokey_url if not null, else web_url"},
+                                "x1":{"type":"integer","description":"upper left default crop point horizontal pixel index, (0,0) is upper left corner "},
+                                "y1":{"type":"integer","description":"upper left default crop point vertical pixel index, (0,0) is upper left corner"},
+                                "x2":{"type":"integer","description":"lower right crop point horizontal pixel index"},
+                                "y2":{"type":"integer","description":"lower right crop point vertical pixel index"},
+                                "presigned_upload_url":{"type":"string","description":"for media post requests the returned media will include this location to upload, presigned with credentials"},
+                                "s3_key":{"type":"string","description":"the s3 key where this media is stored in 2key"}
+                            }
+
+                }כ
+        },
+        "from_hosted":{
+            "type":"array",
+            "items": {
+                        "type":"object",
+                        "properties":{
+                            "id":{"type":"integer","description":"the media id"},
+                            "created_at":{"type":"string","description":"valid timestamp format 2012-01-19 17:21:00 CST"},
+                            "business_id":{"type":"string","description":"the business_id associated with this media"},
+                            "from_hosted_site_id":{"type":"integer","description":"not null if this media was extracted from this hosted_site id"},
+                            "my_lib_business_id":{"type":"integer","description":"not null if this media is part of 'my gallery' for this business id"},
+                            "type":{"type":"string","description":"one of IMAGE/GIF/VIDEO so the client can render/display accordingly"},
+                            "twokey_url":{"type":"string","description":"the location in 2key servers where this media is stored, if it's internally stored"},
+                            "web_url":{"type":"string","description":"the location on the web where this media is stored, if this media isn't stored in 2key"},
+                            "url":{"type":"string","description":"convenience field, shows the location from which to render, has the value of twokey_url if not null, else web_url"},
+                            "x1":{"type":"integer","description":"upper left default crop point horizontal pixel index, (0,0) is upper left corner "},
+                            "y1":{"type":"integer","description":"upper left default crop point vertical pixel index, (0,0) is upper left corner"},
+                            "x2":{"type":"integer","description":"lower right crop point horizontal pixel index"},
+                            "y2":{"type":"integer","description":"lower right crop point vertical pixel index"},
+                            "presigned_upload_url":{"type":"string","description":"for media post requests the returned media will include this location to upload, presigned with credentials"},
+                            "s3_key":{"type":"string","description":"the s3 key where this media is stored in 2key"}
+                        }
+
+            }
+        }
+    }
+}

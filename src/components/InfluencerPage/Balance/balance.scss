@@ -1,0 +1,469 @@
+@import "vars";
+.balance {
+  &.desktop {
+
+    .paypal-withdrawal-window-wrapper{
+      .cash-out-amount{
+        //width: 32%;
+        margin-right: 30px;
+        border: 1px solid $light-gray;
+        border-radius: 5px;
+        font-size: 25px;
+        text-align: center;
+        padding: 0 84px;
+      }
+      .paypal-button{
+        padding: 10px 25px;
+        border-radius: 50px;
+        background: #ffc439;
+      }
+      .paypal-button:hover{
+        background: #d3ad13;
+        cursor: pointer;
+      }
+    }
+
+    .payment-method-btn{
+      background-color: #1A936F;
+      color: #fff;
+      border-radius: 50px;
+    }
+    .cancel-btn{
+      cursor: pointer;
+      font-size: 12px;
+      padding-top: 5px;
+    }
+    font-family: Roboto;
+    color: $text-gray;
+    padding: 11px 15%;
+    text-align: left;
+
+    .new-account-buttons-wrapper{
+      padding: 40px;
+      .payment-method-btn{
+        background-color: #1A936F;
+        color: #fff;
+        border-radius: 50px;
+      }
+      .method-bank-message{
+        color: #828282
+      }
+    }
+
+    .withdrawal-window{
+      .withdrawal-title{
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .text-input-container {
+        width: 42%;
+        input{
+          padding: 10px;
+          font-size: 25px;
+        }
+      }
+      .edit-account{
+        font-size: 11px;
+        color: #898989;
+      }
+      .cancel-withdrawal-btn{
+        cursor: pointer;
+        font-size: 12px;
+        padding-top: 5px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &.mobile {
+    .new-account-buttons-wrapper{
+      //padding: 40px;
+      .payment-method-btn{
+        background-color: #1A936F;
+        color: #fff;
+        border-radius: 50px;
+      }
+      .method-bank-message{
+        color: #828282
+      }
+    }
+    .sub-menu-container {
+      margin-top: 0px;
+      margin-bottom: 20px;
+    }
+    text-align: left;
+    .body {
+      max-height: calc(100vh - 112px);
+      padding: 0;
+      font-family: Roboto;
+      color: $text-gray;
+    }
+  }
+
+  .mobile-paid {
+    padding-left: 20px;
+    padding-bottom: 20px;
+    color: $text-gray;
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .header {
+    font-size: 20px;
+    padding: 15px 0px;
+  }
+
+  .mobile-header {
+    background-color: white;
+    margin: 10px;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    font-family: Roboto;
+    padding: 6px 10px;
+  }
+  .mobile-header-text {
+    font-size: 12px;
+    color: $text-gray;
+  }
+  .right-text {
+    text-align: right;
+  }
+  .button-text-cash-out {
+    color: #114B5F;
+  }
+  .my-earning{
+    .accordion__title {
+      background-color: #f4f4f4;
+      color: #444;
+      cursor: pointer;
+      padding: 0;
+      width: 100%;
+      text-align: left;
+      border: none;
+    }
+    .accordion__body {
+      padding: 0 20px;
+    }
+    max-width: 100vw;
+    box-shadow: 0 5px 5px #ccc;
+    border: 1px solid $light-green;
+    border-radius: 0 3px 3px 3px;
+    overflow-x: hidden;
+
+    .business-name {
+      color: #000;
+      text-decoration: none;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .last-activity,
+    .last-activity:hover{
+      text-decoration: none;
+      color: #C3C4C6;
+    }
+    .btn-link:focus, .btn-link:hover {
+      //color: #0056b3;
+      text-decoration: none;
+      //background-color: transparent;
+    }
+    button{
+      width: 100%;
+      padding-left: 0!important;
+      padding-right: 0!important;
+    }
+    .btn {
+      height: 100%;
+      padding: 0 20px;
+      font-family: Roboto;
+      font-size: 16px;
+      border-radius: 0 3px 3px 3px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+    .balance .my-earning .btn {
+      height: 100%;
+      font-family: Roboto;
+      font-size: 16px;
+      cursor: pointer;
+      padding: 0;
+      border-radius: 3px;
+    }
+    .card-header {
+      padding: 0;
+      border: 0;
+    }
+    .card-body{
+      padding: 0;
+    }
+  }
+  .mobile-total-earning {
+    color: $light-green;
+    font-size: 15px;
+  }
+  .mobile-header-img {
+    height: 36px;
+  }
+  .mobile-withdrawal-history{
+    margin: 5px 0px;
+    padding: 10px;
+    color: #747474;
+    font-size: 14px;
+    border-right: 1px solid #95989a;
+    text-align: center;
+
+    .selected {
+      color: $light-green;
+      font-weight:600;
+    }
+    .unselected {
+      color: #747474;
+    }
+  }
+  .mobile-earning{
+    margin: 5px 0px;
+    padding: 10px;
+    color: #95989a;
+    font-size: 14px;
+    text-align: center;
+
+    .selected {
+      color: $light-green;
+      font-weight:600;
+    }
+    .unselected {
+      color: #747474;
+    }
+  }
+  .earning {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 5px;
+    border:1px solid $light-green;
+
+    .earning-items {
+      padding: 10px;
+      text-align: center;
+      border-right: 1px solid #d1d1d1;
+      margin: 5px 0px;
+    }
+    .earning-item-content {
+      min-height: 37.5px;
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .earning-item-title {
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+
+  .row-direction {
+    display: flex;
+  }
+
+  borderTopZero {
+    border-top: 0px solid;
+  }
+
+  .business-Summary {
+    background-color: white;
+    width: 100%;
+    // border: 1px solid $light-green;
+    padding: 5px 10px 8px;
+    //position: relative;
+    color: $text-gray;
+    font-family: Roboto;
+
+    .profile-img {
+      border: 1px solid #d1d1d1;
+      height: 59px;
+      width: 59px;
+      object-fit: cover;
+    }
+    .detail-profile-img {
+      border: 1px solid #d1d1d1;
+      width: 120px;
+      height: 62px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .detail-crop-profile-img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .mobile-profile-img {
+      border: 1px solid #d1d1d1;
+      height: 50px;
+      width: 50px;
+    }
+    .content {
+      margin-left: 10px;
+    }
+    .business-name {
+      color: $text-gray;
+      font-size: 16px;
+      //font-weight: bold;
+    }
+
+    .line {
+      border-bottom: 1px solid $light-green;
+    }
+    .business-id-to-name {
+      color: $text-gray;
+      font-size: 16px;
+    }
+
+    .last-activity {
+      margin-top: 15px;
+      color: #95989A;
+      font-size: 12px;
+    }
+    .mobile-last-activity {
+      color: #95989A;
+      font-size: 10px;
+
+      .last-activity-mobile {
+        max-width: 100px;
+        white-space: normal;
+      }
+    }
+
+    .fullwidth {
+      width: 100%;
+    }
+    .to-cash {
+      background-color: $light-green;
+      padding: 5px 25px;
+      margin-left: 20px;
+      border: 1px solid $light-green;
+    }
+    .mobile-to-cash {
+      background-color: $light-green;
+      padding: 0 5px;
+      margin-left:  5px;
+      border: 1px solid $light-green;
+    }
+    .to-cash-zoro {
+      background-color: white;
+      padding: 0 25px;
+      margin-left: 20px;
+      border: 1px solid $light-green;
+    }
+    .mobile-to-cash-zoro {
+      background-color: white;
+      padding: 0 15px;
+      margin-left:  5px;
+      border: 1px solid $light-green;
+    }
+    .total-earnings {
+      color: $text-gray;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .total-earnings-title {
+      color: $text-gray;
+      text-align: center;
+      font-size: 12px;
+    }
+    .to-cash-earnings {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .to-cash-earnings-title {
+      text-align: center;
+      color: white;
+      font-size: 12px;
+      font-weight: 300;
+    }
+    .arrow {
+      width: 50px;
+    }
+    .arrow-bottom-img {
+      height: 15px;
+    }
+    .mobile-arrow-img {
+      height: 12px;
+    }
+    .arrow-right-img {
+      width: 15px;
+    }
+    .align-text {
+      text-align: center;
+    }
+    .right-bottom-conner {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    .media-icon {
+      width: 120px;
+      height: 62px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  .withdrawal-container {
+    width: 100%;
+    border: 1px solid $light-green;
+    border-bottom: 0px solid;
+    color: $text-gray;
+    font-size: 12px;
+
+    .withdrawal-title {
+      font-weight: bold;
+      padding: 5px 10px 5px 35px;
+      border-bottom: 2px solid $light-green;
+    }
+
+    .date-description {
+      padding: 5px 10px 5px 35px;;
+    }
+    .date {
+      width: 100%;
+      border-bottom: 1px solid $light-green;
+      font-size: 16px;
+      color: $text-gray;
+      font-weight: bold;
+    }
+    .description {
+      font-size: 12px;
+      color: #95989A;
+      justify-content: center;
+    }
+    .paid-amount {
+      font-size: 18px;
+      color: $light-green;
+      font-weight: 300;
+    }
+    .tax-paid-amount {
+      font-size: 12px;
+      color: $text-gray;
+    }
+    .lockimg {
+      height: 18px;
+    }
+    .withdrawal-content{
+      border-bottom: 0px solid $light-green;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+@import "vars";
+
+.reject-form-container {
+  color: $text-gray;
+
+  textarea {
+    background: #E0E0E0 !important;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 3px;
+    font-size: 13px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  text-align: left;
+  padding: 8px;
+
+  .field-label {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #434343;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  textarea {
+    background: #E0E0E0 !important;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 3px;
+    font-size: 13px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

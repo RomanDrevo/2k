@@ -1,0 +1,131 @@
+@import "vars";
+.thumbnail-view-container {
+  background: #FFF;
+  padding: 20px;
+  width: 100%;
+  overflow: auto;
+
+  .thumbnail-item-wrapper {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin: 10px;
+
+    .thumbnail-item-selection {
+      position: absolute;
+      top: -15px;
+      right: -5px;
+      color: $light-green;
+      font-size: 22px;
+
+      i {
+        background: white;
+      }
+    }
+
+    .thumbnail-item-title {
+      word-break: break-all;
+      width: 165px;
+      text-align: center;
+      color: $light-green;
+
+      .info {
+        font-size: 12px;
+        padding: 3px;
+        display: inline-block;
+      }
+      .error {
+        color: red;
+        font-size: 12px;
+        padding: 3px;
+        display: inline-block;
+      }
+    }
+
+    .thumbnail-wrapper {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      text-align: center;
+      display: table;
+      cursor: pointer;
+      position: relative;
+
+      .thumbnail-content {
+        width: 150px;
+        height: 100px;
+        display: table-cell;
+        vertical-align: middle;
+
+        .clipImg {
+          width: 150px;
+        }
+
+        .thumbnail-content-new-item {
+          color: #95989A;
+          font-size: 75px;
+        }
+
+
+      }
+
+      .thumbnail-crop-overlay {
+        display: none;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 25%;
+        width: 100%;
+        background: #000;
+        padding: 3px;
+        opacity: 0.7;
+        color: #fff;
+        font-size: 14px;
+      }
+
+      &:hover {
+        .thumbnail-crop-overlay {
+          display: block !important;
+
+          &.flex {
+            display: flex !important;
+            justify-content: space-around;
+
+            i {
+              line-height: 21px;
+
+              &:hover {
+                color: #d9d9d9;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.selected {
+      .thumbnail-wrapper {
+        padding: 4px;
+        border-color: #57D589;
+        border-width: 2px;
+      }
+      .thumbnail-crop-overlay {
+        height: calc(25% - 1px);
+        padding: 3px 2px 2px;
+      }
+    }
+  }
+
+
+  .loading-indicator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+
+    i {
+      font-size: 22px;
+      color: rgba(0,0,0,0.3);
+    }
+  }
+}

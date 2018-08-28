@@ -1,0 +1,25 @@
+.lead-status-form-container {
+  color: #434343;
+  text-align: left;
+  padding: 8px; }
+  .lead-status-form-container textarea {
+    background: #E0E0E0;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 3px;
+    font-size: 13px; }
+    .lead-status-form-container textarea:focus {
+      outline: none; }
+  .lead-status-form-container .field-label {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #434343;
+    justify-content: flex-start; }
+  .lead-status-form-container .field-label-small {
+    font-size: 14px;
+    color: #434343;
+    margin-top: 10px; }
+  .lead-status-form-container .align-center {
+    text-align: center; }

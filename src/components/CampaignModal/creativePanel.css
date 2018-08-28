@@ -1,0 +1,13 @@
+.creative .react-tagsinput {
+  height: 43px;
+  border: 1px solid transparent !important; }
+  .creative .react-tagsinput:hover {
+    border: 1px solid #57d589 !important; }
+  .creative .react-tagsinput.react-tagsinput--focused {
+    padding: 4px 0 0 4px;
+    border: 2px solid #57d589 !important; }
+
+.creative .extra.type-light.place-bottom {
+  min-width: 100px; }
+  .creative .extra.type-light.place-bottom:after {
+    border-bottom-color: #1a936f; }

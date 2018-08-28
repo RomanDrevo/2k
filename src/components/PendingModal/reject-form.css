@@ -1,0 +1,30 @@
+.reject-form-container {
+  color: #434343;
+  text-align: left;
+  padding: 8px; }
+  .reject-form-container textarea {
+    background: #E0E0E0 !important;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 3px;
+    font-size: 13px; }
+    .reject-form-container textarea:focus {
+      outline: none; }
+  .reject-form-container .field-label {
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 15px;
+    color: #434343; }
+  .reject-form-container .footer {
+    display: flex;
+    justify-content: center; }
+  .reject-form-container textarea {
+    background: #E0E0E0 !important;
+    border: none;
+    resize: none;
+    width: 100%;
+    padding: 3px;
+    font-size: 13px; }
+    .reject-form-container textarea:focus {
+      outline: none; }

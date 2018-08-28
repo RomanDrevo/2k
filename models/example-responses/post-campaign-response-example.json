@@ -1,0 +1,101 @@
+/*
+response from POST/campaign with following payload in bodyL
+
+{
+	"business_id": 29,
+	"product_id": 50,
+	"hosted_site_id": 26,
+	"media_id":191,
+	"tags":"tech,courses,fullstack,developer,software-engineering,הנדסת תוכנה,תכנות,INT,קידוד,hacking",
+	"name": "fullstack dev course fall 2017",
+	"description":"learn the fullstack hacking",
+	"headline":"Master The Full Stack",
+	"start_date":"2017-09-01",
+	"end_date":"2018-02-28",
+	"action_type":"LEADS",
+	"business_language":"HEBREW",
+	"total_budget":10000.0,
+	"currency":"NIS",
+	"max_cpa":100.0,
+	"budget": 10000.0,
+	"is_active":true,
+	"countries": "ISRAEL",
+	"gender":"ANY"
+}
+
+*/
+{
+    "campaign": {
+        "n_signed_up_users": 0,
+        "n_generated_leads": 0,
+        "is_landing_page_duplication_ready": true,
+        "goal_cpa": null,
+        "media_id": 191,
+        "headline": "Master The Full Stack",
+        "start_date": "2017-09-01T00:00:00+00:00",
+        "deleted_by": null,
+        "n_generated_actions_approved": null,
+        "description": "learn the fullstack hacking",
+        "max_cpa": 100,
+        "media_type": "IMAGE",
+        "countries": [
+            "ISRAEL"
+        ],
+        "deleted_at": null,
+        "end_date": "2018-02-28T00:00:00+00:00",
+        "created_at": "2017-09-26T14:29:44.376779+00:00",
+        "media_x1": null,
+        "is_active": true,
+        "action_type": "LEADS",
+        "white_list_audience_name": null,
+        "gender": "ANY",
+        "last_update_at": null,
+        "media_y1": null,
+        "hosted_site_id": 26,
+        "first_visit_at": null,
+        "black_list_audience_name": null,
+        "business_language": "HEBREW",
+        "media_x2": null,
+        "landing_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/26/www.iti-college.co.il/מיניסייט/nc-full-stack-development/index.html",
+        "business_id": 29,
+        "first_lead_at": null,
+        "total_budget": 10000,
+        "product_id": 50,
+        "n_generated_actions": null,
+        "media_y2": null,
+        "remaining_budget": 10000,
+        "last_visit_at": null,
+        "n_generated_views": null,
+        "campaign_admin_user": "lavi.eitan@gmail.com",
+        "leads_require_approval": true,
+        "id": 54,
+        "last_lead_at": null,
+        "total_paid": null,
+        "is_deleted": null,
+        "twokey_csm": "erez@2key.co",
+        "n_generated_actions_pending_approval": null,
+        "name": "fullstack dev course fall 2017",
+        "media_url": "http://2key-staging-dsites.s3-website-us-east-1.amazonaws.com/static/29/26/www.iti-college.co.il/wp-content/uploads/2017/07/13534_08_Facebook_Profile_a.jpg",
+        "currency": "NIS",
+        "media_crop_ul": {
+            "x": null,
+            "y": null
+        },
+        "media_crop_lr": {
+            "x": null,
+            "y": null
+        }
+    },
+    "tags": [
+        "tech",
+        "courses",
+        "fullstack",
+        "developer",
+        "software-engineering",
+        "הנדסת תוכנה",
+        "תכנות",
+        "INT",
+        "קידוד",
+        "hacking"
+    ]
+}

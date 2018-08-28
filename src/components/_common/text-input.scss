@@ -1,0 +1,69 @@
+@import "vars";
+.text-input-container {
+  width: 100%;
+
+  &.inline {
+    .field-label {
+      margin-right: 5px;
+    }
+  }
+
+  .input-wrapper {
+    position: relative;
+    height: 38px;
+    padding: 6px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    &:hover {
+      border: 1px solid #57d589;
+    }
+
+    &.focused {
+      padding: 5px;
+      border: 2px solid #57d589;
+    }
+
+    .text-input-action {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 3px;
+      top: 0;
+      height: 100%;
+    }
+
+    input {
+      padding: 0;
+    }
+
+    &.border {
+      border: 1px solid $light-gray !important;
+      border-radius: 5px;
+    }
+    &.error-inside {
+      border-color: red !important;
+
+      input {
+        color: red !important;
+      }
+    }
+    &.action-exist {
+      input {
+        padding-right: 25px;
+      }
+    }
+
+    &.disabled {
+      background: #ecebeb;
+      &:hover {
+        border: 1px solid rgba(0, 0, 0, 0);
+      }
+  
+      &.focused {
+        border: 1px solid rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}

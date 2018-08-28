@@ -1,0 +1,29 @@
+.settings-menu-container {
+  width: 230px;
+  text-align: left;
+  height: 100%; }
+  .settings-menu-container .menu-item {
+    color: #434343; }
+    .settings-menu-container .menu-item.selected {
+      font-weight: 700; }
+    .settings-menu-container .menu-item:hover {
+      text-decoration: none; }
+  .settings-menu-container div {
+    height: 40px;
+    padding-left: 25px;
+    cursor: pointer; }
+  .settings-menu-container .business-logo {
+    height: auto;
+    padding-left: 0;
+    border-bottom: 1px solid #BEBFC0; }
+    .settings-menu-container .business-logo .logo-wrapper {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto;
+      padding: 0; }
+      .settings-menu-container .business-logo .logo-wrapper > div {
+        width: 160px;
+        height: 160px;
+        padding: 10px;
+        border: 1px solid #999;
+        border-radius: 15px; }

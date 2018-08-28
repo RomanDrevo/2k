@@ -1,0 +1,40 @@
+.my-activity {
+  .row {
+    width: 100%;
+  }
+}
+
+.campaign-category-title-wrapper {
+  color: #434343;
+  font-size: 20px;
+  padding: 5px;
+  text-align: left;
+
+  span {
+    padding: 0 3px;
+  }
+
+  &.mobile {
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #CBCBCB;
+    margin:0 15px;
+    padding:5px 7px;
+  }
+}
+
+.no-results-wrapper {
+  text-align: center;
+  margin-top: 30px;
+
+  .no-results-icon {
+    img {
+      width: 150px;
+    }
+  }
+  .no-results-message {
+    color: #747474;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+}

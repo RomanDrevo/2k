@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/media schema",
+  "type" : "object",
+  "properties" : {
+    "business_id" : { "type" : "integer" },
+    "file_name":{"type":"string","description":"the file name (only file name and extension no file path, e.g. my_image.jpg"},
+    "web_url":{"type":"string"},
+    "x1":{"type":"integer","description": "(x1,y1) is upper left point of default crop, in pixels (0,0) is upper left corner of image"},
+    "y1":{"type":"integer","description": "(x1,y1) is upper left point of default crop, in pixels (0,0) is upper left corner of image"},
+    "x2":{"type":"integer","description": "(x2,y2) is lower right point of default crop, in pixels (0,0) is upper left corner of image"},
+    "y2":{"type":"integer","description": "(x2,y2) is lower right point of default crop, in pixels (0,0) is upper left corner of image"}
+    },
+  "required": ["business_id"]
+}

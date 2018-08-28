@@ -1,0 +1,24 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/business schema",
+  "type" : "object",
+  "properties" : {
+    "facebook_page_url" : {"type" : "string"},
+    "name": {"type": "string"},
+    "handle":{"type": "string"},
+    "headline":{"type": "string"},
+    "description":{"type": "string"},
+    "website":{"type": "string"},
+    "registered_domain":{"type": "string"},
+    "contact_email":{"type": "string"},
+    "contact_name":{"type": "string"},
+    "contact_phone_number":{"type": "string"},
+    "contact_user":{"type": "string"},
+    "default_advertiser_language":{"type": "string"},
+    "default_campaign_language":{"type": "string"},
+    "twokey_am":{"type": "string"},
+    "twokey_csm":{"type": "string"},
+    "is_deleted":{"type": "string"}
+  },
+  "required": ["name"]
+}

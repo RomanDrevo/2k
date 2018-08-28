@@ -1,0 +1,56 @@
+.campaign-preview-container {
+  margin: 15px; }
+  .campaign-preview-container .campaign-preview-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #434343;
+    text-align: center; }
+  .campaign-preview-container .campaign-preview-body {
+    padding: 15px 10px;
+    background: white;
+    position: relative; }
+    .campaign-preview-container .campaign-preview-body .campaign-preview-banner {
+      position: absolute;
+      color: white;
+      font-size: 13px;
+      background: #1A936F;
+      padding: 3px 8px;
+      left: 2px;
+      top: 30px; }
+    .campaign-preview-container .campaign-preview-body .campaign-preview-img {
+      align-items: center;
+      border: 1px solid #ddd;
+      height: 173px;
+      width: 100%; }
+      .campaign-preview-container .campaign-preview-body .campaign-preview-img img {
+        width: 100%; }
+    .campaign-preview-container .campaign-preview-body .campaign-preview-headline {
+      color: #434343;
+      font-size: 20px;
+      margin: 10px 0;
+      word-break: break-all; }
+    .campaign-preview-container .campaign-preview-body .campaign-preview-description {
+      font-size: 14px;
+      color: #ADAEAE;
+      padding-bottom: 5px; }
+      .campaign-preview-container .campaign-preview-body .campaign-preview-description.align-center {
+        text-align: center; }
+    .campaign-preview-container .campaign-preview-body .campaign-preview-recommend {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #1A936F;
+      font-size: 17px;
+      color: white;
+      height: 49px;
+      position: relative;
+      cursor: pointer;
+      margin: 10px 0; }
+      .campaign-preview-container .campaign-preview-body .campaign-preview-recommend .campaign-preview-recommend-icon {
+        position: absolute;
+        right: 10px;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; }

@@ -1,0 +1,68 @@
+@import "vars";
+.tab-bar-container {
+  background: #C4C4C4;
+  border-bottom: 5px solid $light-green;
+  padding: 0 50px;
+
+  .tab {
+    width: 150px;
+    height: 45px;
+    margin-top: 10px;
+    background: #95989A;
+    display: inline-block;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+
+    &.selected {
+      background: $light-green;
+      box-shadow: 4px -0.5px 3px 0 rgba(0, 0, 0, 0.2), -4px -0.5px 3px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .tab-title {
+      text-align: center;
+      margin: auto;
+      padding: 10px 0;
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width:500px) {
+    padding: 0 5px;
+    border-bottom: 2px solid $light-green;
+    .tab {
+      width: 80px;
+      height: 35px;
+
+      .tab-title {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &.media {
+    background: #E8F0F2;
+    height: 55px;
+    border-bottom: none;
+    padding: 0;
+
+    .tab {
+      width: unset;
+      height: 100%;
+      background: none;
+      border-radius: 0px;
+      margin-top: 0;
+      padding: 6px 25px;
+
+      .tab-title {
+        color: #434343;
+        font-weight: bold;
+      }
+
+      &.selected {
+        background: #ACC9D0;
+        box-shadow: none;
+      }
+    }
+  }
+}

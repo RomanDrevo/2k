@@ -1,0 +1,26 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "PUT/user/profile schema",
+  "type" : "object",
+  "properties" : {
+    "country":{"type": "string", "description": "currently supported: ISRAEL, US"},
+    "default_currency":{"type": "string", "description":"default currency, currently suported: either NIS, USD"},
+    "gender":{"type": "string", "description": "either one of MALE, FEMALE, ANY"},
+    "language":{"type": "string","description": "primary campaign language, currently supported either HEBREW, ENGLISH"},
+    "city":{"type":"string"},
+    "first_name":{"type":"string"},
+    "last_name":{"type":"string"},
+    "contact_number":{"type":"string"},
+    "updated_email":{"type":"string"},
+    "profile_media_id":{"type":"integer"},
+    "profile_media_url":{"type":"string"},
+    "profile_media_type":{"type":"string","description":"eiter GIF/IMAGE/VIDEO"},
+    "cover_media_id":{"type":"integer"},
+    "cover_media_url":{"type":"string"},
+    "cover_media_type":{"type":"string","description":"eiter GIF/IMAGE/VIDEO"},
+    "handle":{"type":"string","description":"a text handle, to enable fast access to the influencer/user homepage"},
+    "birthday":{"type":"string","description":"valid date format string"},
+    "restore_default_profile_pic":{"type":"boolean"},
+    "remove_profile_media":{"type":"boolean"}
+  }
+}

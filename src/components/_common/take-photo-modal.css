@@ -1,0 +1,7 @@
+.camera-view {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 350px; }

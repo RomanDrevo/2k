@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7479 2610 66 66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #434343;
+        font-size: 15px;
+        font-family: Helvetica;
+      }
+
+      .cls-2 {
+        fill: #1dcaff;
+      }
+    </style>
+  </defs>
+  <g id="Group_2410" data-name="Group 2410" transform="translate(7048 15)">
+    <text id="Twitter" class="cls-1" transform="translate(440.004 2658.542)"><tspan x="0" y="0">Twitter</tspan></text>
+    <g id="Twiter_icon_svg" transform="translate(440 2595)">
+      <g id="Layer_1-2" data-name="Layer 1-2" transform="translate(0 0)">
+        <path id="Path_101" data-name="Path 101" class="cls-2" d="M32.4,15.638a10.426,10.426,0,0,0,3.052-.823,10.563,10.563,0,0,1-2.606,2.7v.674A14.861,14.861,0,0,1,9.98,30.671a10.642,10.642,0,0,0,1.246.069,10.46,10.46,0,0,0,6.47-2.286,5.213,5.213,0,0,1-4.87-3.624,5.213,5.213,0,0,0,2.355-.091A5.213,5.213,0,0,1,11,19.628v-.069a5.19,5.19,0,0,0,2.366.652,5.224,5.224,0,0,1-1.612-6.962A14.792,14.792,0,0,0,22.5,18.691a5.213,5.213,0,0,1,8.882-4.756,10.426,10.426,0,0,0,3.3-1.269A5.224,5.224,0,0,1,32.4,15.547M45.372,22.6a22.726,22.726,0,1,0,0,.091" transform="translate(0.08 0.08)"/>
+      </g>
+    </g>
+  </g>
+</svg>

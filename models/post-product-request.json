@@ -1,0 +1,15 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/product schema",
+  "type" : "object",
+  "properties" : {
+    "business_id" : {"type" : "integer"},
+    "name": {"type": "string"},
+    "headline":{"type": "string"},
+    "description":{"type": "string"},
+    "business_website_product_page_url":{"type": "string"},
+    "media_id":{"type": "string"},
+    "default_product_language":{"type": "string"}
+  },
+  "required": ["name","business_id"]
+}

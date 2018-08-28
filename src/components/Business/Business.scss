@@ -1,0 +1,35 @@
+@import "vars";
+.business-form {
+
+}
+
+.business {
+    width:600px;
+    margin:40px auto 0;
+}
+
+.business-list-menu {
+    text-align: left;
+    li {
+        padding: .7rem 0 .7rem 30px;
+        position:relative;
+        display: flex;
+        align-items: center;
+
+        &.active > a {
+            font-weight: 500;
+        }
+
+        &:last-child {
+            padding-bottom: 3px;
+        }
+    }
+    li > img {
+        position:absolute;
+        left: 0;
+        width:20px;
+        border-radius: 2px;
+        border:1px solid $light-gray;
+
+    }
+}

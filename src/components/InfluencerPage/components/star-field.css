@@ -1,0 +1,27 @@
+.star-field-wrapper {
+  position: relative;
+  width: 25px;
+  height: 25px; }
+  .star-field-wrapper .star-field-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .star-field-wrapper .star-field-value {
+    position: absolute;
+    left: -2px;
+    top: 3px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 12px; }
+  .star-field-wrapper.small {
+    width: 23px;
+    height: 23px; }

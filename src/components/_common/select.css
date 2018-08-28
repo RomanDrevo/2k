@@ -1,0 +1,82 @@
+.select-container {
+  display: flex;
+  padding: 4px 0;
+  text-align: left; }
+  .select-container:disabled {
+    background: #ecebeb !important; }
+  .select-container .select-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+  .select-container .select-content {
+    position: relative;
+    flex: 1;
+    width: 100%; }
+    .select-container .select-content.white .select-trigger-wrapper {
+      background: #FFF; }
+      .select-container .select-content.white .select-trigger-wrapper:hover {
+        background: #FFF; }
+    .select-container .select-content.white .select-list-wrapper {
+      background: #FFF; }
+    .select-container .select-content .select-trigger-wrapper {
+      display: flex;
+      background: #EEEEEE;
+      border: 1px solid #95989A;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+      color: #434343;
+      cursor: pointer; }
+      .select-container .select-content .select-trigger-wrapper:hover {
+        background: #E0E0E0; }
+      .select-container .select-content .select-trigger-wrapper.disabled {
+        background: #ecebeb;
+        color: #95989A;
+        cursor: default; }
+      .select-container .select-content .select-trigger-wrapper.rounded {
+        border-radius: 5px; }
+      .select-container .select-content .select-trigger-wrapper.no-shadow {
+        box-shadow: none; }
+      .select-container .select-content .select-trigger-wrapper .select-trigger-title {
+        padding: 6px;
+        font-weight: bold;
+        border-right: 1px solid #95989A;
+        font-size: 14px;
+        line-height: 24px; }
+      .select-container .select-content .select-trigger-wrapper .select-trigger-value {
+        flex: 1;
+        padding: 6px;
+        min-width: 100px;
+        width: 100%;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
+      .select-container .select-content .select-trigger-wrapper .select-trigger-icon {
+        padding: 6px; }
+    .select-container .select-content .select-list-wrapper {
+      position: absolute;
+      width: 100%;
+      max-height: 300px;
+      overflow-y: auto;
+      background: #EEEEEE;
+      border: 1px solid #95989A;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.16);
+      z-index: 10000;
+      cursor: pointer; }
+      .select-container .select-content .select-list-wrapper .select-list-item {
+        border-bottom: 1px solid #95989A;
+        color: #434343;
+        padding: 3px; }
+        .select-container .select-content .select-list-wrapper .select-list-item:last-child {
+          border-bottom: none; }
+        .select-container .select-content .select-list-wrapper .select-list-item.selected {
+          background: #1A936F;
+          color: white; }
+        .select-container .select-content .select-list-wrapper .select-list-item:hover {
+          background: #1a936f;
+          color: #fff; }
+      .select-container .select-content .select-list-wrapper .loading-indicator {
+        text-align: center; }
+        .select-container .select-content .select-list-wrapper .loading-indicator i {
+          font-size: 12px;
+          color: rgba(0, 0, 0, 0.3); }

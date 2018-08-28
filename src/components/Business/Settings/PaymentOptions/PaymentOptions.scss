@@ -1,0 +1,23 @@
+.payment-options-wrapper{
+  .add-account-btn{
+    color: #1D9471;
+    cursor: pointer;
+  }
+  .payment-method-btn{
+    background-color: #1A936F;
+    color: #fff;
+    border-radius: 50px;
+  }
+  .cancel-btn {
+    cursor: pointer;
+    font-size: 12px;
+    padding-top: 5px;
+    margin-left: 10px;
+  }
+
+  @media (max-width: 500px){
+    .panel-container.black {
+      background: #D1D1D1;
+    }
+  }
+}

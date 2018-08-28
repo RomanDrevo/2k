@@ -1,0 +1,16 @@
+{
+    "VerificationStatus": {
+        "VerificationStatus": {
+            "name_to_value": {
+                "APPROVED": "Approved",
+                "PENDING": "Pending",
+                "REJECTED": "Rejected"
+            },
+            "value_to_name": {
+                "Approved": "APPROVED",
+                "Pending": "PENDING",
+                "Rejected": "REJECTED"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.influencer-campaign-results-panel {
+  background: #EEEEEE; }
+  .influencer-campaign-results-panel .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white !important;
+    padding: 10px; }
+    .influencer-campaign-results-panel .header .date-range-picker-trigger {
+      width: auto; }
+  .influencer-campaign-results-panel .mobile-grid .date-range-picker-trigger {
+    width: calc(100% - 30px);
+    margin: 0 auto 20px;
+    background: #fff; }
+  .influencer-campaign-results-panel .grid {
+    min-height: 200px; }
+
+.campaignResultsDate {
+  width: 100%; }
+  .campaignResultsDate .rc-calendar-date-panel {
+    display: flex;
+    flex-wrap: wrap; }
+    .campaignResultsDate .rc-calendar-date-panel .rc-calendar-range-part {
+      float: none; }

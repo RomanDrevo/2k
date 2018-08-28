@@ -1,0 +1,97 @@
+{
+  "lifetime_results":{
+      "reach":5400,
+      "conversions":25,
+      "convertion_rate":0.04,
+      "total_earnings":2500.0,
+      "currency":"NIS",
+      "avg_cpa":100.0,
+      "rejected":4
+  },
+  "leads":[
+    {
+      "campaign_lead_id":5,
+      "date":"2017-09-26T14:56:52.335345+00:00",
+      "lead_name":"יום טוב סמיה",
+      "lead_email":"samia@yomtov.com",
+      "lead_contact_number":"0547832998",
+      "verification_status":"PENDING",
+      "rejection_type":null,
+      "rejection_text":null,
+      "lead_value":50.0,
+      "currency":"NIS"
+    },
+    {
+      "campaign_lead_id":19,
+      "date":"2017-10-24T14:56:52.335345+00:00",
+      "lead_name":"leaders ahoy",
+      "lead_email":"ahoy@gmail.com",
+      "lead_contact_number":"0522857839",
+      "verification_status":"APPROVED",
+      "rejection_type":null,
+      "rejection_text":null,
+      "lead_value":70.0,
+      "currency":"NIS"
+    },
+    {
+      "campaign_lead_id":8,
+      "date":"2017-10-23T12:22:03.432345+00:00",
+      "lead_name":"גמאני רוצה",
+      "lead_email":"will.power@gmail.com",
+      "lead_contact_number":"0508938927",
+      "verification_status":"REJECTED",
+      "rejection_type":"OTHER",
+      "rejection_text":"looks like an already existing customer in my customer base",
+      "lead_value":80.0,
+      "currency":"NIS"
+    },
+    {
+      "campaign_lead_id":7,
+      "date":"2017-10-24T11:52:02.335345+00:00",
+      "lead_name":"אני חושב englier",
+      "lead_email":"langi.ahor@hotmail.com",
+      "lead_contact_number":"0537687543",
+      "verification_status":"APPROVED",
+      "rejection_type":null,
+      "rejection_text":null,
+      "lead_value":70.0,
+      "currency":"NIS"
+    },
+    {
+      "campaign_lead_id":14,
+      "date":"2017-10-21T15:46:23.335345+00:00",
+      "lead_name":"מישהו חשוב",
+      "lead_email":"mailman@chimp.com",
+      "lead_contact_number":"0544938675",
+      "verification_status":"REJECTED",
+      "rejection_type":"FAKE",
+      "rejection_text":"looks like a fake mail not going to try even",
+      "lead_value":80.0,
+      "currency":"NIS"
+    },
+    {
+      "campaign_lead_id":12,
+      "date":"2017-10-24T18:07:34.335345+00:00",
+      "lead_name":"׳wannna be",
+      "lead_email":"wanna.be@gmail.com",
+      "lead_contact_number":"0522476998",
+      "verification_status":"PENDING",
+      "rejection_type":null,
+      "rejection_text":null,
+      "lead_value":60.0,
+      "currency":"NIS"
+    },
+    {
+      "campaign_lead_id":11,
+      "date":"2017-10-25T14:12:13.335345+00:00",
+      "lead_name":"רוצהלהיות חפץ",
+      "lead_email":"thingers.wanna@gmail.com",
+      "lead_contact_number":"0505699832",
+      "verification_status":"REJECTED",
+      "rejection_type":"NO_RESPONSE",
+      "rejection_text":"never answered tried 3 times",
+      "lead_value":80.0,
+      "currency":"NIS"
+    }
+  ]
+}

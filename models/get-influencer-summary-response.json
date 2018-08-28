@@ -1,0 +1,85 @@
+
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "GET/influencer/summary schema",
+  "description":"response from GET/influencer/summary",
+  "type" : "object",
+  "properties" : {
+      "time_of_day_greeting":{"type":"string","description":"either Morning,Afternoon,Evening,Night"},
+      "influencer_call_name":{"type":"string","description":"either the influencers private name, or some extractable name to call the influencer from known metadata"},
+      "total_earnings":{"type":"number","description":"float representing the total earnings for this influencer, e.g 6500.0"},
+      "total_earnings_display_string":{"type":"string","description":"a string to display the earnings correctly: e.g. 6.5k"},
+      "current_balance":{"type":"number","description":"the current balance of earnings not yet cashed out by influencer, in float number"},
+      "current_balance_display_string":{"type":"string","description":"display version of balance same as for total earnings"},
+      "currency":{"type":"string","description":"either NIS/USD"},
+      "current_balance_pending":{"type":"number","description":"current balance of produced actions which have not yet been approved"},
+      "current_balance_pending_display_string":{"type":"string"},
+      "n_total_campaigns":{"type":"integer","description":"total campaigns this influencer has particiapted in"},
+      "reputation_score":{"type":"integer"},
+      "results":{
+          "type":"object",
+          "properties":{
+                "last_24h":{
+                    "type":"object",
+                    "properties":{
+                        "views":{"type":"integer"},
+                        "conversions":{"type":"integer"},
+                        "rejected":{"type":"integer"},
+                        "earnings":{"type":"integer"},
+                        "conversion_rate":{"type":"number","description":"conversion rate in %"},
+                        "avg_earn_per_lead":{"type":"number"},
+                        "currency":{"type":"string","description":"either USD/NIS"}
+                    }
+                },
+                "last_7d":{
+                    "type":"object",
+                    "properties":{
+                        "views":{"type":"integer"},
+                        "conversions":{"type":"integer"},
+                        "rejected":{"type":"integer"},
+                        "earnings":{"type":"integer"},
+                        "conversion_rate":{"type":"number","description":"conversion rate in %"},
+                        "avg_earn_per_lead":{"type":"number"},
+                        "currency":{"type":"string","description":"either USD/NIS"}
+                    }
+                },
+                "last_30d":{
+                    "type":"object",
+                    "properties":{
+                        "views":{"type":"integer"},
+                        "conversions":{"type":"integer"},
+                        "rejected":{"type":"integer"},
+                        "earnings":{"type":"integer"},
+                        "conversion_rate":{"type":"number","description":"conversion rate in %"},
+                        "avg_earn_per_lead":{"type":"number"},
+                        "currency":{"type":"string","description":"either USD/NIS"}
+                    }
+                },
+                "last_365d":{
+                    "type":"object",
+                    "properties":{
+                        "views":{"type":"integer"},
+                        "conversions":{"type":"integer"},
+                        "rejected":{"type":"integer"},
+                        "earnings":{"type":"integer"},
+                        "conversion_rate":{"type":"number","description":"conversion rate in %"},
+                        "avg_earn_per_lead":{"type":"number"},
+                        "currency":{"type":"string","description":"either USD/NIS"}
+                    }
+                },
+                "lifetime":{
+                    "type":"object",
+                    "properties":{
+                        "views":{"type":"integer"},
+                        "conversions":{"type":"integer"},
+                        "rejected":{"type":"integer"},
+                        "earnings":{"type":"integer"},
+                        "conversion_rate":{"type":"number","description":"conversion rate in %"},
+                        "avg_earn_per_lead":{"type":"number"},
+                        "currency":{"type":"string","description":"either USD/NIS"}
+                    }
+                }
+            }
+        }
+    }
+}

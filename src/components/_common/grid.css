@@ -1,0 +1,35 @@
+.grid-container .grid-header-container {
+  display: flex;
+  background: #FFF;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #3A3A3A;
+  width: 100%; }
+  .grid-container .grid-header-container .column {
+    padding: 5px 10px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: bold;
+    color: #3A3A3A;
+    cursor: pointer; }
+    .grid-container .grid-header-container .column .column-label {
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+
+.grid-container .grid-row-container {
+  display: flex;
+  background: #ECEBEB; }
+  .grid-container .grid-row-container.striped {
+    background: #D1D1D1; }
+  .grid-container .grid-row-container .cell {
+    font-size: 13px;
+    padding: 10px 7px;
+    margin: auto; }
+
+.grid-container .overflow-no-hidden {
+  overflow: unset !important; }
+
+.grid-container .empty-message {
+  text-align: center;
+  padding: 10px; }

@@ -1,0 +1,143 @@
+{
+  "total_pending":7,
+  "leads":[
+    {
+      "campaign_lead_id":5,
+      "date":"2017-09-26T14:56:52.335345+00:00",
+      "campaign_name":"INT cyber Fall 2017",
+      "influencer_name":"שושי דמרי",
+      "influencer_email":"shoshi.damari@gmail.com",
+      "lead_name":"יום טוב סמיה",
+      "lead_email":"samia@yomtov.com",
+      "lead_contact_number":"0547832998"
+    },
+    {
+      "campaign_lead_id":19,
+      "date":"2017-10-24T14:56:52.335345+00:00",
+      "campaign_name":"INT cyber Fall 2017",
+      "influencer_name":"שושי דמרי",
+      "influencer_email":"shoshi.damari@gmail.com",
+      "lead_name":"leaders ahoy",
+      "lead_email":"ahoy@gmail.com",
+      "lead_contact_number":"0522857839"
+    },
+    {
+      "campaign_lead_id":8,
+      "date":"2017-10-23T12:22:03.432345+00:00",
+      "campaign_name":"INT SAP Applications Winter 2017",
+      "influencer_name":"שושי דמרי",
+      "influencer_email":"shoshi.damari@gmail.com",
+      "lead_name":"גמאני רוצה",
+      "lead_email":"will.power@gmail.com",
+      "lead_contact_number":"0508938927"
+    },
+    {
+      "campaign_lead_id":7,
+      "date":"2017-10-24T11:52:02.335345+00:00",
+      "campaign_name":"קורס שיווק דיגילטי תא סתיו 2017",
+      "influencer_name":"bongy bongo",
+      "influencer_email":"bongers.b@yahoo.com",
+      "lead_name":"אני חושב englier",
+      "lead_email":"langi.ahor@hotmail.com",
+      "lead_contact_number":"0537687543"
+    },
+    {
+      "campaign_lead_id":14,
+      "date":"2017-10-21T15:46:23.335345+00:00",
+      "campaign_name":"קורס יסודות המסחר נובמבר 2017",
+      "influencer_name":null,
+      "influencer_email":"partrum@crusty.co",
+      "lead_name":"מישהו חשוב",
+      "lead_email":"mailman@chimp.com",
+      "lead_contact_number":"0544938675"
+    },
+    {
+      "campaign_lead_id":12,
+      "date":"2017-10-24T18:07:34.335345+00:00",
+      "campaign_name":"fullstack dev october 17",
+      "influencer_name":"mefull stack",
+      "influencer_email":"stacker@stacker.com",
+      "lead_name":"׳wannna be",
+      "lead_email":"wanna.be@gmail.com",
+      "lead_contact_number":"0522476998"
+    },
+    {
+      "campaign_lead_id":11,
+      "date":"2017-10-25T14:12:13.335345+00:00",
+      "campaign_name":"INT IOT course winter 2017",
+      "influencer_name":"אני חפץ",
+      "influencer_email":"things@gmail.com",
+      "lead_name":"רוצהלהיות חפץ",
+      "lead_email":"thingers.wanna@gmail.com",
+      "lead_contact_number":"0505699832"
+    }
+  ],
+  "influencer_to_stats":{
+      "things@gmail.com":{
+        "n_campaigns":4,
+        "n_products":2,
+        "n_leads_generated":20,
+        "n_views_generated":149,
+        "total_earned":400.0,
+        "earnings_currency":"NIS",
+        "total_cashed":350.0,
+        "total_balance":50.0,
+        "avg_convertion_rate":13.5,
+        "member_since":"2016-10-25T14:12:13.335345+00:00",
+        "last_activity":"2017-10-25T11:11:11.335345+00:00"
+      },
+      "stacker@stacker.com":{
+        "n_campaigns":1,
+        "n_products":1,
+        "n_leads_generated":2,
+        "n_views_generated":123,
+        "total_earned":100.0,
+        "earnings_currency":"NIS",
+        "total_cashed":50.0,
+        "total_balance":50.0,
+        "avg_convertion_rate":1.62,
+        "member_since":"2017-09-12T11:12:13.335345+00:00",
+        "last_activity":"2017-10-20T10:23:56.335345+00:00"
+      },
+      "partrum@crusty.co":{
+        "n_campaigns":5,
+        "n_products":5,
+        "n_leads_generated":65,
+        "n_views_generated":1233,
+        "total_earned":650.0,
+        "earnings_currency":"NIS",
+        "total_cashed":500.0,
+        "total_balance":150.0,
+        "avg_convertion_rate":5.27,
+        "member_since":"2017-01-11T13:12:43.123456+00:00",
+        "last_activity":"2017-10-24T14:34:22.335345+00:00"
+      },
+      "bongers.b@yahoo.com":{
+        "n_campaigns":3,
+        "n_products":3,
+        "n_leads_generated":13,
+        "n_views_generated":543,
+        "total_earned":156.0,
+        "earnings_currency":"NIS",
+        "total_cashed":156.0,
+        "total_balance":0.0,
+        "avg_convertion_rate":2.39,
+        "member_since":"2017-03-04T22:10:11.123456+00:00",
+        "last_activity":"2017-09-30T21:23:45.335345+00:00"
+      },
+      "shoshi.damari@gmail.com": {
+        "n_campaigns":10,
+        "n_products":8,
+        "n_leads_generated":550,
+        "n_views_generated":10543,
+        "total_earned":27500.0,
+        "earnings_currency":"NIS",
+        "total_cashed":21000.0,
+        "total_balance":6500.0,
+        "avg_convertion_rate":5.21,
+        "member_since":"2016-02-02T21:12:11.123456+00:00",
+        "last_activity":"2017-10-26T00:11:12.654321+00:00"
+      }
+  }
+
+}

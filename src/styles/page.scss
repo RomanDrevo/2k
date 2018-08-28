@@ -1,0 +1,35 @@
+@import "vars";
+
+.page-body {
+  //padding: 0 50px;
+  padding-top:0;
+
+  &.settings {
+    padding-top: 30px;
+
+    .paypal-button{
+      padding: 10px 25px;
+      border-radius: 50px;
+      background: #ffc439;
+    }
+    .paypal-button:hover{
+      background: #d3ad13;
+      cursor: pointer;
+    }
+    .cash-in-btn{
+      //width: 40%;
+      padding: 10px 0px;
+      background: #1A936F;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 50px;
+    }
+    .cash-out-amount{
+      margin-right: 30px;
+      border: 1px solid $light-gray;
+      border-radius: 5px;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.gallery-container {
+  background: white;
+  height: 100%;
+  overflow-y: auto; }
+
+.cropping-toolbar-container {
+  display: flex;
+  flex: 1;
+  color: #434343;
+  height: 50px; }
+  .cropping-toolbar-container .cropping-toolbar-title {
+    font-size: 16px;
+    padding: 15px 50px 15px 100px; }
+  .cropping-toolbar-container .cropping-toolbar-option-wrapper {
+    flex: 1;
+    text-align: center;
+    cursor: pointer; }
+    .cropping-toolbar-container .cropping-toolbar-option-wrapper.selected {
+      background: #ACC9D0; }
+    .cropping-toolbar-container .cropping-toolbar-option-wrapper .cropping-toolbar-option {
+      display: inline-block;
+      text-align: center;
+      padding: 2px; }
+      .cropping-toolbar-container .cropping-toolbar-option-wrapper .cropping-toolbar-option .cropping-toolbar-option-img-wrapper {
+        display: inline-block;
+        height: 28px; }
+        .cropping-toolbar-container .cropping-toolbar-option-wrapper .cropping-toolbar-option .cropping-toolbar-option-img-wrapper .cropping-toolbar-option-img {
+          border: 2px solid #434343; }
+      .cropping-toolbar-container .cropping-toolbar-option-wrapper .cropping-toolbar-option .cropping-toolbar-option-label {
+        font-weight: bold;
+        font-size: 14px;
+        margin-top: -8px; }

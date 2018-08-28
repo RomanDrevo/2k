@@ -1,0 +1,83 @@
+.sub-menu-container {
+  display: flex;
+  top: 60px;
+  width: 100%;
+  margin-bottom: 15px;
+  background: #fff;
+  text-align: left;
+  z-index: 10; }
+  .sub-menu-container .row {
+    margin-left: 0;
+    margin-right: 0; }
+  @media (max-width: 767.98px) {
+    .sub-menu-container {
+      margin-top: 20px;
+      margin-bottom: 20px; } }
+  .sub-menu-container .sub-menu-region {
+    min-width: 1440px; }
+    .sub-menu-container .sub-menu-region.influencer {
+      min-width: 1440px; }
+
+.sub-menu-item {
+  flex: 1;
+  color: #747474;
+  font-size: 14px;
+  font-weight: 300;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: nowrap; }
+  @media (max-width: 767.98px) {
+    .sub-menu-item {
+      font-weight: 400; } }
+  .sub-menu-item.business-sub.selected {
+    border-bottom: 5px solid #57D589; }
+  .sub-menu-item.borderBottom > div {
+    width: 100%;
+    border-bottom: solid 1px #D1D1D1; }
+  .sub-menu-item:hover {
+    text-decoration: none;
+    color: #434343; }
+  .sub-menu-item.selected {
+    color: #434343; }
+    .sub-menu-item.selected > div {
+      padding-bottom: 0px;
+      border-bottom: 5px solid #57D589; }
+  .sub-menu-item > div {
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 2px 20px 0 0; }
+    .sub-menu-item > div img {
+      height: 18px; }
+    @media (max-width: 550px) {
+      .sub-menu-item > div {
+        padding: 2px 5px;
+        margin: 2px 0 0 0; } }
+
+.tabs {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+  .tabs li {
+    display: inline-block;
+    text-align: center; }
+    .tabs li a {
+      padding: 15px;
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .tabs li a + span {
+        width: calc(100% - 15px);
+        height: 5px;
+        display: block;
+        margin: -5px auto 0 auto;
+        opacity: 0;
+        background-color: #16a764; }
+      .tabs li a.active {
+        font-weight: bold; }
+        .tabs li a.active + span {
+          opacity: 1; }
+    .tabs li .active-tab {
+      opacity: 1; }
+  .tabs li:hover .inactive-tab {
+    opacity: 1;
+    transition: opacity .5s; }

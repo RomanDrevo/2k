@@ -1,0 +1,37 @@
+@import "vars";
+.alert {
+  &.alert-container  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .alert-box {
+    position: relative;
+    padding: 10px;
+    border:1px solid $light-green;
+    background-color: #fff;
+    //box-shadow: 0px 5px 5px #ccc;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: #434343;
+    width: 249px;
+    .alert-title {
+      color: $light-green;
+    }
+
+    .iconNo {
+      height: 30px;
+    }
+
+    .btn-approve,.btn-reject {
+      cursor: pointer;
+    }
+
+    .button-container {
+
+    }
+  }
+}

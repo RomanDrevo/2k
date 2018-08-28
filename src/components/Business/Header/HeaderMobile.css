@@ -1,0 +1,61 @@
+.mobile-view {
+  margin: 0;
+  text-align: left;
+  font-size: 14px; }
+  .mobile-view a {
+    cursor: pointer; }
+  .mobile-view h2 {
+    font-size: 25px;
+    font-weight: normal; }
+  .mobile-view h3 {
+    font-size: 15px;
+    font-weight: normal; }
+  .mobile-view h4 {
+    font-size: 20px;
+    line-height: 1.5;
+    text-transform: uppercase; }
+  .mobile-view .box {
+    background-color: #fff; }
+  .mobile-view .business-cover-img {
+    margin-right: -15px;
+    margin-left: -15px; }
+  .mobile-view .meta-info {
+    position: relative;
+    min-height: 64px; }
+  .mobile-view .cover-image {
+    width: 100%;
+    height: auto; }
+  .mobile-view .profile-image {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    height: 100px;
+    margin: -10px 0 0 20px;
+    border: 2px solid #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+  .mobile-view .business-cover {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 10px;
+    margin-left: 20px;
+    width: calc(100% - 140px); }
+  .mobile-view .business-logo {
+    position: absolute;
+    left: 14px;
+    top: -26%;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #FFFFFF;
+    border-radius: 6px; }
+    .mobile-view .business-logo img {
+      width: 100%; }
+  .mobile-view .business-name {
+    font-size: 24px;
+    font-weight: 500; }
+  .mobile-view .geolocation {
+    font-size: 20px; }
+
+@media (min-width: 992px) {
+  .mobile-view {
+    display: none; } }

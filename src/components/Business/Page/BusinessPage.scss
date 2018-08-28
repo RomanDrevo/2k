@@ -1,0 +1,161 @@
+@import '../../../styles/global.scss';
+
+.business-page {
+  padding-top: 15px;
+
+  &.onboarding {
+    min-height: 1500px;
+  }
+  a { cursor: pointer; }
+
+  h5 {
+    text-align: left;
+    color: #999;
+    font-size: 16px;
+    border-bottom: 2px solid #999;
+    margin: 10px 0;
+    padding: 10px 0;
+  }
+
+  .no-padding { padding: 0; }
+
+  .show-mobile {
+    display: none;
+  }
+
+  .tabs {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    margin-top: 30px;
+    padding: 0;
+
+    .active-tab, .inactive-tab {
+      width: 40%;
+      height: 10px;
+      display: block;
+      margin: -5px auto 0 auto;
+      opacity: 0;
+      background-color: #16a764;
+    }
+
+    li {
+      display: inline-block;
+      width: 33%;
+      text-align: center;
+
+      a {
+        padding: 15px;
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+
+      .active-tab {
+        opacity: 1;
+      }
+    }
+
+    li:hover {
+      .inactive-tab {
+        opacity: 1;
+        transition: opacity .5s;
+      }
+    }
+
+  }
+
+  .contact-wrapper {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+
+    .contact-list {
+      list-style-type: none;
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+
+      li {
+        min-height: 29px;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 17px 17px;
+        font-size: 13px;
+        padding: 5px 0 5px 35px;
+      }
+
+      .contact-list-website { background-image: url('../../../icons/website_icon_mobile.svg'); }
+      .contact-list-phone-number { background-image: url('../../../icons/phone_icon_mobile.svg'); }
+      .contact-list-email { background-image: url('../../../icons/email_icon_mobile.svg'); }
+      .contact-list-address { background-image: url('../../../icons/address_icon_mobile.svg'); }
+    }
+
+    .contact-list-edit {
+      width: 100%;
+      padding: 5px;
+    }
+  }
+
+  .about-wrapper {
+    width: 100%;
+    text-align: left;
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      height: auto;
+    }
+  }
+
+  .edit-save {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .onboardFaq {
+    margin: 0 -10px;
+    padding: 20px;
+    border: 3px solid #1a936f;
+    border-radius: 20px;
+    background: #fff;
+    color: #434343;
+
+    .modal-header {
+      padding: 0;
+
+      i {
+        color: #ccc;
+  
+        &:hover {
+          color: #ddd;
+        }
+      }  
+    }
+
+    main {
+      padding-top: 15px;
+    }
+
+    h4 {
+      // color: #96999b;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    p {
+      color: #96999b;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .business-page {
+    padding: 0;
+    .show-mobile { display: block; }
+    .hide-mobile { display: none; }
+  }
+}

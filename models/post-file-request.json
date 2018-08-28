@@ -1,0 +1,10 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/file schema",
+  "type" : "object",
+  "properties" : {
+    "business_id" : { "type" : "integer" },
+    "file_name":{"type":"string","description":"the file name (only file name and extension no file path, e.g. whitelist_campaign1.csv"}
+  },
+  "required": ["business_id","file_name"]
+}

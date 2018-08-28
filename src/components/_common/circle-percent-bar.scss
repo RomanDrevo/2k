@@ -1,0 +1,24 @@
+@import "vars";
+.svg-wrapper {
+  display: block;
+  margin: 0 auto;
+}
+.circle-background,
+.circle-progress {
+  fill: none;
+}
+
+.circle-progress {
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+}
+
+.circle-text {
+  font-size: 12px;
+  fill: $light-green;
+  display: block;
+}
+
+.number {
+  font-size: 17px;
+}

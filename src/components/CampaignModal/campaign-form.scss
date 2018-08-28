@@ -1,0 +1,68 @@
+.campaign-form {
+  position: relative;
+  
+  .content-region {
+    min-height: 70vh;
+    height: 100%;
+
+    &.edit {
+      height: calc(100% - 36px) !important;
+    }
+  }
+  .preview-region {
+
+  }
+
+  .field-label {
+    padding-right: 0;
+  }
+
+  //.CampaignModal-panel {
+  //  padding-top: 15px;
+  //  padding-bottom: 50px;
+  //}
+
+  .new-site-wrapper {
+    background: #FFF;
+    padding: 15px;
+
+    .btn-region {
+      border: 1px solid #95989A;
+      margin: 4px 11px 5px 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 150px;
+      text-align: center;
+      cursor: pointer;
+
+      i {
+        color: #95989A;
+        font-size: 75px;
+      }
+    }
+
+    .input-wrapper {
+      border: 1px solid #95989A;
+
+      &:hover {
+        border: 1px solid #57d589;
+      }
+  
+      &.focused {
+        padding: 5px;
+        border: 2px solid #57d589;
+      }
+    }
+  }
+}
+.audience-dropzone {
+  height: 120px;
+  .fa {
+    color: #ccc;
+
+    &:hover {
+      color: #ddd;
+    }
+  }
+}

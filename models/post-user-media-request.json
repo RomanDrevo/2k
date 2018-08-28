@@ -1,0 +1,11 @@
+{
+  "$schema" : "http://json-schema.org/draft-04/schema#",
+  "title" : "POST/user/media schema",
+  "type" : "object",
+  "properties" : {
+    "file_name":{"type":"string","description":"the file name (only file name and extension no file path, e.g. my_image.jpg"},
+    "is_profile_picture":{"type":"boolean"},
+    "is_cover_photo":{"type":"boolean"}
+    },
+  "required": ["file_name"]
+}

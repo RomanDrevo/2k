@@ -1,0 +1,24 @@
+.btn-icon {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  &:focus {
+    outline: none;
+  }
+
+  width: 23px;
+  height: 23px;
+  padding: 0;
+  border-radius: 3px;
+
+  img {
+    width: 100%;
+  }
+
+  &.btn-close {
+    position: absolute;
+
+    right: 3px;
+    top: 3px;
+  }
+}

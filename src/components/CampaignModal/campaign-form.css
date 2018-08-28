@@ -1,0 +1,38 @@
+.campaign-form {
+  position: relative; }
+  .campaign-form .content-region {
+    min-height: 70vh;
+    height: 100%; }
+    .campaign-form .content-region.edit {
+      height: calc(100% - 36px) !important; }
+  .campaign-form .field-label {
+    padding-right: 0; }
+  .campaign-form .new-site-wrapper {
+    background: #FFF;
+    padding: 15px; }
+    .campaign-form .new-site-wrapper .btn-region {
+      border: 1px solid #95989A;
+      margin: 4px 11px 5px 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 150px;
+      text-align: center;
+      cursor: pointer; }
+      .campaign-form .new-site-wrapper .btn-region i {
+        color: #95989A;
+        font-size: 75px; }
+    .campaign-form .new-site-wrapper .input-wrapper {
+      border: 1px solid #95989A; }
+      .campaign-form .new-site-wrapper .input-wrapper:hover {
+        border: 1px solid #57d589; }
+      .campaign-form .new-site-wrapper .input-wrapper.focused {
+        padding: 5px;
+        border: 2px solid #57d589; }
+
+.audience-dropzone {
+  height: 120px; }
+  .audience-dropzone .fa {
+    color: #ccc; }
+    .audience-dropzone .fa:hover {
+      color: #ddd; }

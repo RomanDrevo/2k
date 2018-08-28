@@ -1,0 +1,76 @@
+@import "vars";
+.campaign-preview-container {
+  margin: 15px;
+  .campaign-preview-header {
+    font-size: 16px;
+    font-weight: bold;
+    color: #434343;
+    text-align: center;
+  }
+
+  .campaign-preview-body {
+    padding: 15px 10px;
+    background: white;
+    position: relative;
+
+    .campaign-preview-banner {
+      position: absolute;
+      color: white;
+      font-size: 13px;
+      background: $light-green;
+      padding: 3px 8px;
+      left: 2px;
+      top: 30px;
+    }
+
+    .campaign-preview-img {
+      //display: flex;
+      align-items: center;
+      border: 1px solid #ddd;
+      height: 173px;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .campaign-preview-headline {
+      color: #434343;
+      font-size: 20px;
+      margin: 10px 0;
+      word-break: break-all;
+    }
+    .campaign-preview-description {
+      font-size: 14px;
+      color: #ADAEAE;
+      padding-bottom: 5px;
+      
+      &.align-center {
+        text-align: center;
+      }
+    }
+    .campaign-preview-recommend {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $light-green;
+      font-size: 17px;
+      color: white;
+      height: 49px;
+      position: relative;
+      cursor: pointer;
+      margin: 10px 0;
+
+      .campaign-preview-recommend-icon {
+        position: absolute;
+        right: 10px;
+        height: 100%;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

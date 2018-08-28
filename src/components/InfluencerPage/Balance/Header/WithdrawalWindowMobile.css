@@ -1,0 +1,13 @@
+.withdrawal-window-mobile-wrapper {
+  font-weight: 500; }
+  .withdrawal-window-mobile-wrapper .text-input-container {
+    width: 40%;
+    border: 1px solid green;
+    border-radius: 7px; }
+    .withdrawal-window-mobile-wrapper .text-input-container input {
+      font-size: 25px; }
+  .withdrawal-window-mobile-wrapper .edit-account {
+    font-size: 11px;
+    color: gray; }
+  .withdrawal-window-mobile-wrapper .cancel-withdrawal-btn {
+    text-transform: uppercase; }

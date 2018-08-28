@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="7616 2610 66 66">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #434343;
+        font-size: 15px;
+        font-family: Helvetica;
+      }
+
+      .cls-2 {
+        fill: #dd5044;
+      }
+
+      .cls-3 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Group_2406" data-name="Group 2406" transform="translate(7323 5035)">
+    <text id="Google_" data-name="Google +" class="cls-1" transform="translate(296 -2361.458)"><tspan x="0" y="0">Google +</tspan></text>
+    <g id="G__New_Logo" transform="translate(181 -2448)">
+      <circle id="Ellipse_19" data-name="Ellipse 19" class="cls-2" cx="23" cy="23" r="23" transform="translate(122 23)"/>
+      <path id="G_" data-name="G+" class="cls-3" d="M233.869,205.481a9.2,9.2,0,1,1,6.21-16l-2.713,2.656a5.417,5.417,0,1,0,1.569,6.059h-5.182v-3.845h9.12a9.21,9.21,0,0,1-9,11.127Zm19.808-8.505h-3.2v3.2h-2.33v-3.2h-3.2v-2.331h3.2v-3.2h2.33v3.2h3.2v2.331Z" transform="translate(-94.182 -150.521)"/>
+    </g>
+  </g>
+</svg>

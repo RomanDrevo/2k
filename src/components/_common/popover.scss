@@ -1,0 +1,401 @@
+@import "vars";
+.up-arrow {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #000;
+  text-decoration: none;
+  border-radius: 2px;
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 10px);
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 7px);
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-color: white;
+  }
+
+  &.red {
+    border-color: #D68686;
+    &:before {
+      border-bottom-color: #D68686;
+    }
+  }
+  &.green {
+    border-color: #57D589;
+    &:before {
+      border-bottom-color: #57D589;
+    }
+  }
+  &.darkgreen {
+    border-color: $light-green;
+    &:before {
+      border-bottom-color: $light-green;
+    }
+  }
+
+  &.offset1 {
+    &:before {
+      left: calc(10% - 10px);
+    }
+    &:after {
+      left: calc(10% - 7px);
+    }
+  }
+  &.offset2 {
+    &:before {
+      left: calc(20% - 10px);
+    }
+    &:after {
+      left: calc(20% - 7px);
+    }
+  }
+  &.offset3 {
+    &:before {
+      left: calc(30% - 10px);
+    }
+    &:after {
+      left: calc(30% - 7px);
+    }
+  }
+  &.offset4 {
+    &:before {
+      left: calc(40% - 10px);
+    }
+    &:after {
+      left: calc(40% - 7px);
+    }
+  }
+  &.offset5 {
+    &:before {
+      left: calc(50% - 10px);
+    }
+    &:after {
+      left: calc(50% - 7px);
+    }
+  }
+  &.offset6 {
+    &:before {
+      left: calc(60% - 10px);
+    }
+    &:after {
+      left: calc(60% - 7px);
+    }
+  }
+  &.offset7 {
+    &:before {
+      left: calc(70% - 10px);
+    }
+    &:after {
+      left: calc(70% - 7px);
+    }
+  }
+  &.offset8 {
+    &:before {
+      left: calc(80% - 10px);
+    }
+    &:after {
+      left: calc(80% - 7px);
+    }
+  }
+  &.offset9 {
+    &:before {
+      left: calc(90% - 10px);
+    }
+    &:after {
+      left: calc(90% - 7px);
+    }
+  }
+}
+.down-arrow {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #000;
+  text-decoration: none;
+  border-radius: 2px;
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 10px);
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-color: #000;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: calc(50% - 7px);
+    top: 100%;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top-color: white;
+  }
+
+  &.red {
+    border-color: #D68686;
+    &:before {
+      border-top-color: #D68686;
+    }
+  }
+  &.green {
+    border-color: #57D589;
+    &:before {
+      border-top-color: #57D589;
+    }
+  }
+  &.darkgreen {
+    border-color: $light-green;
+    &:before {
+      border-top-color: $light-green;
+    }
+  }
+
+  &.offset1 {
+    &:before {
+      left: calc(10% - 10px);
+    }
+    &:after {
+      left: calc(10% - 7px);
+    }
+  }
+  &.offset2 {
+    &:before {
+      left: calc(20% - 10px);
+    }
+    &:after {
+      left: calc(20% - 7px);
+    }
+  }
+  &.offset3 {
+    &:before {
+      left: calc(30% - 10px);
+    }
+    &:after {
+      left: calc(30% - 7px);
+    }
+  }
+  &.offset4 {
+    &:before {
+      left: calc(40% - 10px);
+    }
+    &:after {
+      left: calc(40% - 7px);
+    }
+  }
+  &.offset5 {
+    &:before {
+      left: calc(50% - 10px);
+    }
+    &:after {
+      left: calc(50% - 7px);
+    }
+  }
+  &.offset6 {
+    &:before {
+      left: calc(60% - 10px);
+    }
+    &:after {
+      left: calc(60% - 7px);
+    }
+  }
+  &.offset7 {
+    &:before {
+      left: calc(70% - 10px);
+    }
+    &:after {
+      left: calc(70% - 7px);
+    }
+  }
+  &.offset8 {
+    &:before {
+      left: calc(80% - 10px);
+    }
+    &:after {
+      left: calc(80% - 7px);
+    }
+  }
+  &.offset9 {
+    &:before {
+      left: calc(90% - 10px);
+    }
+    &:after {
+      left: calc(90% - 7px);
+    }
+  }
+}
+
+.left-arrow {
+  display: inline-block;
+  position: relative;
+  border: 2px solid #000;
+  text-decoration: none;
+  border-radius: 2px;
+  background: #FFF;
+  width: 100%;
+  height: 100%;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 20px);
+    right: -20px;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-left-color: #000;
+  }
+
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 17px);
+    right: -14px;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-left-color: white;
+  }
+
+  &.red {
+    border-color: #D68686;
+    &:before {
+      border-left-color: #D68686;
+    }
+  }
+  &.green {
+    border-color: #57D589;
+    &:before {
+      border-left-color: #57D589;
+    }
+  }
+  &.darkgreen {
+    border-color: $light-green;
+    &:before {
+      border-left-color: $light-green;
+    }
+  }
+
+  &.offset1 {
+    &:before {
+      top: calc(10% - 20px);
+    }
+    &:after {
+      top: calc(10% - 17px);
+    }
+  }
+  &.offset2 {
+    &:before {
+      top: calc(20% - 20px);
+    }
+    &:after {
+      top: calc(20% - 17px);
+    }
+  }
+  &.offset3 {
+    &:before {
+      top: calc(30% - 20px);
+    }
+    &:after {
+      top: calc(30% - 17px);
+    }
+  }
+  &.offset4 {
+    &:before {
+      top: calc(40% - 20px);
+    }
+    &:after {
+      top: calc(40% - 17px);
+    }
+  }
+  &.offset5 {
+    &:before {
+      top: calc(50% - 20px);
+    }
+    &:after {
+      top: calc(50% - 17px);
+    }
+  }
+  &.offset6 {
+    &:before {
+      top: calc(60% - 20px);
+    }
+    &:after {
+      top: calc(60% - 17px);
+    }
+  }
+  &.offset7 {
+    &:before {
+      top: calc(70% - 20px);
+    }
+    &:after {
+      top: calc(70% - 17px);
+    }
+  }
+  &.offset8 {
+    &:before {
+      top: calc(80% - 20px);
+    }
+    &:after {
+      top: calc(80% - 17px);
+    }
+  }
+  &.offset9 {
+    &:before {
+      top: calc(90% - 20px);
+    }
+    &:after {
+      top: calc(90% - 17px);
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: transparent;
+  z-index: 1000;
+}
+
+
+.pop-menu-wrapper {
+  text-align: left;
+  .pop-menu-item {
+    color: $text-gray;
+    font-size: 14px;
+    line-height: 1.7em;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,22 @@
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+const OpenNewAccountButtons = () => (
+  <div className="new-account-buttons-wrapper">
+    <div className="flex justify-center payment-method-question">
+            How do you want to receive your earnings?
+    </div>
+    <div className="flex justify-center mt2">
+      <Link to="/settings/payment/new/paypal">
+        <button className="btn payment-method-btn mr3">PayPal Account</button>
+      </Link>
+      <div className="flex flex-column">
+        <Link to="/settings/payment/new/bank">
+          <button className="btn payment-method-btn ml3">Bank Account</button>
+        </Link>
+      </div>
+    </div>
+  </div>
+)
+
+export default OpenNewAccountButtons

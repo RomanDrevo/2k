@@ -1,0 +1,22 @@
+.alert.alert-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+
+.alert .alert-box {
+  position: relative;
+  padding: 10px;
+  border: 1px solid #1A936F;
+  background-color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 300;
+  color: #434343;
+  width: 249px; }
+  .alert .alert-box .alert-title {
+    color: #1A936F; }
+  .alert .alert-box .iconNo {
+    height: 30px; }
+  .alert .alert-box .btn-approve, .alert .alert-box .btn-reject {
+    cursor: pointer; }

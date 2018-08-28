@@ -1,0 +1,30 @@
+// response from POST/product with payload:
+/*
+{
+	"business_id":30,
+	"name": "קורס בישול אסייתי"
+}
+*/
+{
+    "product": {
+        "business_website_product_page_url": null,
+        "id": 58,
+        "last_campaign_id": null,
+        "media_type": null,
+        "media_url": null,
+        "last_hosted_url": null,
+        "created_at": "2017-09-26T17:34:12.110938+00:00",
+        "deleted_at": null,
+        "is_deleted": null,
+        "headline": null,
+        "last_update_at": null,
+        "twokey_product_page_url": null,
+        "last_hosted_id": null,
+        "default_product_language": "HEBREW",
+        "media_id": null,
+        "name": "קורס בישול אסייתי",
+        "deleted_by": null,
+        "description": null,
+        "business_id": 30
+    }
+}

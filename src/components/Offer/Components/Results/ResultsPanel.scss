@@ -1,0 +1,40 @@
+.influencer-campaign-results-panel {
+  background: #EEEEEE;
+
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white !important;
+    padding: 10px;
+
+    .date-range-picker-trigger {
+      width: auto;
+    }
+  }
+
+  .mobile-grid {
+    .date-range-picker-trigger {
+      width: calc(100% - 30px);
+      margin: 0 auto 20px;
+      background: #fff;
+    }
+  }
+
+  .grid {
+    min-height: 200px;
+  }
+}
+
+
+.campaignResultsDate {
+  width: 100%;
+  .rc-calendar-date-panel {
+    display: flex;
+    flex-wrap: wrap;
+
+    .rc-calendar-range-part {
+      float: none;
+    }
+  }
+}

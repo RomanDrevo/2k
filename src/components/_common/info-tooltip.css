@@ -1,0 +1,20 @@
+.info-tooltip-container {
+  line-height: 14px; }
+  .info-tooltip-container .info-tooltip-trigger {
+    margin: 0 7px 2px;
+    display: inline-block;
+    width: 14px; }
+  .info-tooltip-container .info-tooltip-box {
+    border: 2px solid #1A936F;
+    background: #f2f2f2;
+    box-shadow: 0 3px 5px 5px rgba(0, 38, 19, 0.16); }
+    .info-tooltip-container .info-tooltip-box::after {
+      border-right-color: #1A936F !important;
+      border-right-width: 13px !important;
+      left: -14px !important; }
+    .info-tooltip-container .info-tooltip-box.type-light {
+      color: #434343; }
+    .info-tooltip-container .info-tooltip-box h4 {
+      color: #0071BC;
+      font-size: 18px;
+      text-align: left; }

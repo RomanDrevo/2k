@@ -1,0 +1,181 @@
+.finances-wrapper {
+  /* DivTable */ }
+  .finances-wrapper .cash-in-amount {
+    margin-right: 30px;
+    border: 1px solid #95989A;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center; }
+  .finances-wrapper .paypal-button {
+    padding: 3px 15px;
+    border-radius: 50px;
+    background: #ffc439; }
+  .finances-wrapper .paypal-button:hover {
+    background: #d3ad13;
+    cursor: pointer; }
+  .finances-wrapper .amount-to-deposit {
+    border: 1px solid #95989A;
+    border-radius: 3px;
+    padding: 7px 80px; }
+  .finances-wrapper .finance-table .cash-in-btn {
+    min-width: 150px;
+    padding: 5px 10px;
+    background: #1A936F;
+    color: #fff;
+    font-size: 20px; }
+  .finances-wrapper .finance-table .cash-in-btn-disabled {
+    min-width: 150px;
+    min-height: 60px;
+    padding: 15px 10px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px; }
+  .finances-wrapper .finance-table .campaign-logo-wrapper {
+    max-width: 60px;
+    max-height: 80px; }
+    .finances-wrapper .finance-table .campaign-logo-wrapper img {
+      width: 100%; }
+  .finances-wrapper .finance-table .table-header {
+    font-weight: 600; }
+    .finances-wrapper .finance-table .table-header .table-row {
+      border-top: 2px solid #1A936F;
+      border-right: 0;
+      border-left: 0; }
+    .finances-wrapper .finance-table .table-header .header-row {
+      border-top: 2px solid #1A936F; }
+  .finances-wrapper .finance-table .finance-table-body {
+    border-top: 1px solid #1A936F;
+    height: 500px;
+    overflow-y: auto; }
+  .finances-wrapper .finance-table .btn.btn-secondary {
+    height: 30px !important;
+    background: #fff;
+    color: #434343;
+    border: 1px solid #434343;
+    border-radius: 0;
+    margin-left: 5px; }
+  .finances-wrapper .finance-table .table-row {
+    border: 1px solid #1A936F;
+    border-top: 0;
+    padding: 0 15px; }
+  .finances-wrapper .finance-table .divTableCell {
+    padding: 10px 10px; }
+  .finances-wrapper .finance-table .divTableRow.edit-window {
+    display: block !important; }
+  .finances-wrapper .finance-table .audience-name {
+    padding-left: 50px; }
+  .finances-wrapper .payment-method-btn {
+    background-color: #1A936F;
+    color: #fff;
+    border-radius: 50px; }
+  .finances-wrapper .campaigns-list {
+    border-bottom: 1px solid #1A936F; }
+  .finances-wrapper .earning {
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #1A936F; }
+    .finances-wrapper .earning .earning-items {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      border-right: 1px solid #d1d1d1;
+      margin: 5px 0px; }
+    .finances-wrapper .earning .earning-item-content {
+      min-height: 37.5px;
+      font-size: 25px;
+      font-weight: 300; }
+    .finances-wrapper .earning .earning-item-title {
+      font-size: 15px;
+      font-weight: 300; }
+  .finances-wrapper .campaign-element {
+    background-color: white;
+    width: 100%;
+    border-bottom: 0;
+    padding: 5px 10px 8px;
+    color: #434343;
+    font-family: Roboto;
+    font-size: 20px; }
+    .finances-wrapper .campaign-element .campaign-img {
+      border: 1px solid #d1d1d1;
+      height: 59px;
+      width: 59px;
+      object-fit: cover; }
+    .finances-wrapper .campaign-element .detail-campaign-img {
+      border: 1px solid #d1d1d1;
+      width: 120px;
+      height: 62px;
+      justify-content: center;
+      align-items: center;
+      display: flex; }
+      .finances-wrapper .campaign-element .detail-campaign-img img {
+        max-width: 100%;
+        max-height: 100%; }
+    .finances-wrapper .campaign-element .detail-crop-campaign-img {
+      max-width: 100%;
+      max-height: 100%; }
+    .finances-wrapper .campaign-element .mobile-campaign-img {
+      border: 1px solid #d1d1d1;
+      height: 50px;
+      width: 50px; }
+    .finances-wrapper .campaign-element .content {
+      margin-left: 10px; }
+    .finances-wrapper .campaign-element .campaign-name {
+      color: #434343;
+      font-size: 20px; }
+    .finances-wrapper .campaign-element .line {
+      border-bottom: 1px solid #1A936F; }
+    .finances-wrapper .campaign-element .business-id-to-name {
+      color: #434343;
+      font-size: 16px; }
+    .finances-wrapper .campaign-element .last-activity {
+      margin-top: 15px;
+      color: #95989A;
+      font-size: 12px; }
+    .finances-wrapper .campaign-element .mobile-last-activity {
+      color: #95989A;
+      font-size: 10px; }
+      .finances-wrapper .campaign-element .mobile-last-activity .last-activity-mobile {
+        max-width: 100px;
+        white-space: normal; }
+    .finances-wrapper .campaign-element .to-cash {
+      background-color: #1A936F;
+      padding: 0 25px;
+      margin-left: 20px;
+      border: 1px solid #1A936F; }
+    .finances-wrapper .campaign-element .mobile-to-cash {
+      background-color: #1A936F;
+      padding: 0 5px;
+      margin-left: 5px;
+      border: 1px solid #1A936F; }
+    .finances-wrapper .campaign-element .to-cash-zoro {
+      background-color: white;
+      padding: 0 25px;
+      margin-left: 20px;
+      border: 1px solid #1A936F; }
+    .finances-wrapper .campaign-element .mobile-to-cash-zoro {
+      background-color: white;
+      padding: 0 15px;
+      margin-left: 5px;
+      border: 1px solid #1A936F; }
+    .finances-wrapper .campaign-element .total-earnings {
+      color: #434343;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300; }
+    .finances-wrapper .campaign-element .budget-details {
+      color: #434343;
+      text-align: center;
+      font-size: 20px; }
+    .finances-wrapper .campaign-element .right-bottom-conner {
+      position: absolute;
+      bottom: 0px;
+      right: 0px; }
+    .finances-wrapper .campaign-element .media-icon {
+      width: 120px;
+      height: 62px; }
+      .finances-wrapper .campaign-element .media-icon img {
+        max-width: 100%;
+        max-height: 100%; }
+  .finances-wrapper .campaign-th {
+    font-size: 25px;
+    font-weight: 600; }

@@ -1,0 +1,41 @@
+image: registry.gitlab.com/2key/2key-web-app/deployer:latest
+
+stages:
+- build
+- deploy
+
+variables:
+  BUILD_ENV_NAME: "staging"
+  CI: "false"
+
+build:
+  stage: build
+  only:
+    refs:
+    - develop
+    - master
+  artifacts:
+    paths:
+    - /builds/2key/2key-web-app/build
+  script:
+  - cd /builds/2key/2key-web-app/
+  - aws s3 cp s3://$S3_BUCKET_NAME/app/config.$CI_COMMIT_REF_NAME.js ./src/config.js
+  - yarn install
+  - yarn run build-bootstrap
+  - yarn run build-css
+  - yarn run build
+
+
+deploy:
+  stage: deploy
+  dependencies:
+  - build
+  only:
+    refs:
+    - develop
+    - master
+  script:
+  - aws s3 sync /builds/2key/2key-web-app/build  s3://test.app.2key.co/
+  - aws s3 sync /builds/2key/2key-web-app/build  s3://test.app.2key.network/
+  - aws cloudfront create-invalidation --distribution-id E11YCUEXJHQU0W --paths '/*'
+  - aws cloudfront create-invalidation --distribution-id E3IM9EERF55OL2 --paths '/*'

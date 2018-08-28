@@ -1,0 +1,23 @@
+.page-body {
+  padding-top: 0; }
+  .page-body.settings {
+    padding-top: 30px; }
+    .page-body.settings .paypal-button {
+      padding: 10px 25px;
+      border-radius: 50px;
+      background: #ffc439; }
+    .page-body.settings .paypal-button:hover {
+      background: #d3ad13;
+      cursor: pointer; }
+    .page-body.settings .cash-in-btn {
+      padding: 10px 0px;
+      background: #1A936F;
+      color: #fff;
+      font-size: 20px;
+      border-radius: 50px; }
+    .page-body.settings .cash-out-amount {
+      margin-right: 30px;
+      border: 1px solid #95989A;
+      border-radius: 5px;
+      font-size: 25px;
+      text-align: center; }

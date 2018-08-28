@@ -1,0 +1,247 @@
+@import "vars";
+
+.finances-wrapper{
+  .cash-in-amount{
+    //width: 32%;
+    margin-right: 30px;
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .paypal-button{
+    padding: 3px 15px;
+    border-radius: 50px;
+    background: #ffc439;
+  }
+  .paypal-button:hover{
+    background: #d3ad13;
+    cursor: pointer;
+  }
+  .amount-to-deposit{
+    border: 1px solid $light-gray;
+    border-radius: 3px;
+    padding: 7px 80px;
+  }
+  /* DivTable */
+  .finance-table{
+    .cash-in-btn{
+      min-width: 150px;
+      padding: 5px 10px;
+      background: #1A936F;
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .cash-in-btn-disabled{
+      min-width: 150px;
+      min-height: 60px;
+      padding: 15px 10px;
+      background: #fff;
+      color: #fff;
+      font-size: 20px;
+    }
+    .campaign-logo-wrapper{
+      max-width: 60px;
+      max-height: 80px;
+      img{
+        width: 100%;
+      }
+    }
+    .table-header{
+      font-weight: 600;
+      .table-row {
+        border-top: 2px solid $light-green;
+        border-right: 0;
+        border-left: 0;
+      }
+      .header-row{
+        border-top: 2px solid $light-green;
+      }
+    }
+    .finance-table-body{
+      border-top: 1px solid $light-green;
+      height: 500px;
+      overflow-y: auto;
+    }
+    .btn.btn-secondary{
+      height: 30px!important;
+      background: #fff;
+      color: $text-gray;
+      border: 1px solid $text-gray;
+      border-radius: 0;
+      margin-left: 5px;
+    }
+    .table-row {
+      border: 1px solid $light-green;
+      border-top: 0;
+      padding: 0 15px;
+    }
+    .divTableCell {
+      padding: 10px 10px;
+    }
+    .divTableRow.edit-window{
+      display: block!important;
+    }
+    .audience-name{
+      padding-left: 50px;
+    }
+  }
+
+  .payment-method-btn{
+    background-color: #1A936F;
+    color: #fff;
+    border-radius: 50px;
+  }
+  .campaigns-list{
+    border-bottom: 1px solid $light-green;
+  }
+  .earning {
+    background-color: #fff;
+    border-radius: 5px;
+    border:1px solid $light-green;
+
+    .earning-items {
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      border-right: 1px solid #d1d1d1;
+      margin: 5px 0px;
+    }
+    .earning-item-content {
+      min-height: 37.5px;
+      font-size: 25px;
+      font-weight: 300;
+    }
+    .earning-item-title {
+      font-size: 15px;
+      font-weight: 300;
+    }
+  }
+  .campaign-element {
+    background-color: white;
+    width: 100%;
+    //border: 1px solid $light-green;
+    //box-shadow: 0 0 0 1px $light-green;
+    border-bottom: 0;
+    padding: 5px 10px 8px;
+    //position: relative;
+    color: $text-gray;
+    font-family: Roboto;
+    font-size: 20px;
+
+
+
+    .campaign-img {
+      border: 1px solid #d1d1d1;
+      height: 59px;
+      width: 59px;
+      object-fit: cover;
+    }
+    .detail-campaign-img {
+      border: 1px solid #d1d1d1;
+      width: 120px;
+      height: 62px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+    .detail-crop-campaign-img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+    .mobile-campaign-img {
+      border: 1px solid #d1d1d1;
+      height: 50px;
+      width: 50px;
+    }
+    .content {
+      margin-left: 10px;
+    }
+    .campaign-name {
+      color: $text-gray;
+      font-size: 20px;
+      //font-weight: bold;
+    }
+
+    .line {
+      border-bottom: 1px solid $light-green;
+    }
+    .business-id-to-name {
+      color: $text-gray;
+      font-size: 16px;
+    }
+
+    .last-activity {
+      margin-top: 15px;
+      color: #95989A;
+      font-size: 12px;
+    }
+    .mobile-last-activity {
+      color: #95989A;
+      font-size: 10px;
+
+      .last-activity-mobile {
+        max-width: 100px;
+        white-space: normal;
+      }
+    }
+
+    .to-cash {
+      background-color: $light-green;
+      padding: 0 25px;
+      margin-left: 20px;
+      border: 1px solid $light-green;
+    }
+    .mobile-to-cash {
+      background-color: $light-green;
+      padding: 0 5px;
+      margin-left:  5px;
+      border: 1px solid $light-green;
+    }
+    .to-cash-zoro {
+      background-color: white;
+      padding: 0 25px;
+      margin-left: 20px;
+      border: 1px solid $light-green;
+    }
+    .mobile-to-cash-zoro {
+      background-color: white;
+      padding: 0 15px;
+      margin-left:  5px;
+      border: 1px solid $light-green;
+    }
+    .total-earnings {
+      color: $text-gray;
+      text-align: center;
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .budget-details {
+      color: $text-gray;
+      text-align: center;
+      font-size: 20px;
+    }
+    .right-bottom-conner {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+    }
+    .media-icon {
+      width: 120px;
+      height: 62px;
+      img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+  .campaign-th{
+    font-size: 25px;
+    font-weight: 600;
+  }
+}

@@ -1,0 +1,38 @@
+.language-ticker {
+  font-size: 0.8rem;
+  text-align: left; }
+
+.language-ticker button:hover, .language-ticker button:focus {
+  color: #cacaca;
+  text-decoration: none; }
+
+.language-ticker button {
+  font-size: 0.8rem;
+  padding-left: 30px;
+  color: #cacaca;
+  background: transparent url("./language-icon.svg") no-repeat 5px center;
+  background-size: 20px auto; }
+
+.language-ticker .dropdown-menu {
+  background: #333;
+  border: 0 none;
+  font-size: 0.8rem; }
+
+.language-ticker a {
+  color: #cacaca; }
+
+.language-ticker a:hover, .language-ticker a:focus {
+  background: transparent; }
+
+.language-ticker .is-dropdown-submenu.menu {
+  background: #333333;
+  border: 0 none; }
+
+.language-ticker .is-dropdown-submenu.menu > li {
+  border-bottom: 1px solid #cacaca; }
+
+.dropdown.menu.language-ticker > li.is-dropdown-submenu-parent > a {
+  color: #cacaca; }
+
+.dropdown.menu.language-ticker > li.is-dropdown-submenu-parent > a::after {
+  border-color: #cacaca transparent transparent; }

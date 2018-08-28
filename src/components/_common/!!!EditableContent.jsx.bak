@@ -1,0 +1,79 @@
+import React, {Component} from 'react'
+import _ from "lodash/lodash"
+import contentEditIcon from '../../icons/pencil_icon.png'
+
+class EditableContent extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: props.value, editMode : this.props.editMode || false }
+    this.onFocusLost = this.onFocusLost.bind(this);
+    this.updateValue = this.updateValue.bind(this);
+  }
+
+  updateValue(e) {
+    const {value} = e.target;
+    if (!!value && _.isString(value) && value.trim() !== "") {
+      this.setState({value: e.target.value});
+    }
+  }
+
+  onFocusLost(e) {
+    const {value} = e.target;
+    if (!!value && _.isString(value) && value.trim() !== "") {
+      this.setState({value: e.target.value, editMode: false});
+      if (this.props.dispatcherMethod) {
+        this.props.dispatcherMethod(e.target.value)
+      }
+    }
+  }
+
+  render() {
+    const {type, className} = this.props;
+    const {editMode, value} = this.state;
+    const children = React.Children.toArray(this.props.children);
+    const relChild = children.find((child) => {
+      return !!child.props.contentKey;
+    });
+    let html;
+    if (editMode) {
+      switch(type) {
+        case 'text':
+        case 'tel':
+        case 'email':
+        case 'url':
+          html = (<input className={className} onChange={this.updateValue} onBlur={this.onFocusLost} type={type} value={value} />);
+          break;
+        case 'textarea':
+          html = (<textarea className={className} onChange={this.updateValue} onBlur={this.onFocusLost}>{value}</textarea>);
+          break;
+      }
+      return html;
+    } else {
+      return (
+        <section>
+          {relChild}
+          <a className='content-edit-icon' onClick={() => {this.setState({editMode:true})}}><img src={contentEditIcon} alt='edit' width="21" height="18" /></a>
+        </section>
+      )
+    }
+  }
+}
+
+
+class EditableContentGroup extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { editMode : this.props.editMode || false }
+  }
+
+  render() {
+    const {editMode} = this.state;
+    const children = React.Children.toArray(this.props.children);
+    if (editMode) {
+
+    }
+    return (<div></div>);
+  }
+}
+
+export default EditableContent;

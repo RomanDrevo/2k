@@ -1,0 +1,60 @@
+{
+      "time_of_day_greeting":{"type":"string","description":"either Morning,Afternoon,Evening,Night"},
+      "influencer_call_name":{"type":"string","description":"either the influencers private name, or some extractable name to call the influencer from known metadata"},
+      "total_earnings":6500.0,
+      "total_earnings_display_string":"6.5k",
+      "current_balance":320.0,
+      "current_balance_display_string":"320",
+      "currency":"NIS",
+      "current_balance_pending":60.0,
+      "current_balance_pending_display_string":"60.0",
+      "n_total_campaigns":20,
+      "reputation_score":15,
+      "results": {
+          "last_24h": {
+            "views":200,
+            "conversions":15,
+            "rejected": 2,
+            "earnings": 130.0,
+            "conversion_rate": 12.3,
+            "avg_earn_per_lead": 65.0,
+            "currency": "NIS"
+          },
+          "last_7d": {
+            "views":1300,
+            "conversions":78,
+            "rejected": 7,
+            "earnings": 785.0,
+            "conversion_rate": 5.7,
+            "avg_earn_per_lead": 12.3,
+            "currency": "NIS"
+          },
+          "last_30d": {
+            "views":5600,
+            "conversions":300,
+            "rejected": 12,
+            "earnings": 3500,
+            "conversion_rate": 8.2,
+            "avg_earn_per_lead": 11.4,
+            "currency": "NIS"
+          },
+          "last_365d": {
+            "views":89000,
+            "conversions":3432,
+            "rejected": 54,
+            "earnings": 60342,
+            "conversion_rate": 5.5,
+            "avg_earn_per_lead": 19.3,
+            "currency": "NIS"
+          },
+          "lifetime": {
+            "views":230132,
+            "conversions":6453,
+            "rejected": 132,
+            "earnings": 120934,
+            "conversion_rate": 12.3,
+            "avg_earn_per_lead": 65.0,
+            "currency": "NIS"
+          }
+      }
+}

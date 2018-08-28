@@ -1,0 +1,518 @@
+@import "vars";
+
+.create-business {
+  text-align: left;
+  color: #434343;
+
+  a {
+    cursor: pointer;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .min-padding {
+    padding: 0 8px;
+  }
+
+  .box {
+    background-color: #fff;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    min-height: 385px;
+    position: relative;
+  }
+
+  .profile-image-wrapper {
+    width: 160px;
+    height: 160px;
+    display: block;
+    margin: 0 auto 20px auto;
+  }
+
+  .profile-image-wrapper,
+  .cover-image-wrapper {
+    position: relative;
+    overflow: hidden;
+    min-height: 100px;
+  }
+
+  .profile-image-wrapper:hover,
+  .cover-image-wrapper:hover {
+    .image-edit-icon {
+      opacity: 0.75;
+      transition: opacity .5s;
+    }
+  }
+
+  .profile-image {
+    display: block;
+    margin: 0 auto 20px auto;
+    padding: 10px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid #999;
+    border-radius: 15px;
+  }
+
+  .contact-list {
+    list-style-type: none;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+
+    li {
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: 17px 17px;
+      font-size: 13px;
+      padding: 5px 0 5px 35px;
+    }
+
+    .contact-list-website {
+      background-image: url('../../../icons/website_icon_desktop.svg');
+    }
+
+    .contact-list-phone-number {
+      background-image: url('../../../icons/phone_icon_desktop.svg');
+    }
+
+    .contact-list-email {
+      background-image: url('../../../icons/email_icon_desktop.svg');
+    }
+
+    .contact-list-address {
+      background-image: url('../../../icons/address_icon_desktop.svg');
+    }
+  }
+
+  .create-new-campaign {
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    font-size: 15px;
+    padding: 14px 10px 14px 50px;
+    background: #1a936f url('../../../icons/plus_icon.png') no-repeat center left 10px;
+    color: #fff !important;
+    font-weight: bold;
+  }
+
+  .cover-image {
+    width: 100%;
+  }
+
+  .business-cover {
+    text-align: center;
+    margin-top: 40px;
+
+    h2,
+    h3 {
+      line-height: 1.5;
+    }
+  }
+
+  .header-about {
+    h3 {
+      font-size: 25px;
+    }
+    font-size: 13px;
+    line-height: 20px;
+
+    .about-paragraph {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 0;
+    }
+  }
+
+  .toggle-wrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #f7f7f7;
+    border-top: 1px solid #d1d2d3;
+    text-align: center;
+
+    h4 {
+      text-align: center;
+      font-size: 15px;
+      padding-top: 4px;
+      font-weight: bold;
+      color: #96989a;
+    }
+
+    span,
+    .switch {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0 12px;
+      margin-top: -15px;
+    }
+
+    span {
+      padding-top: 12px;
+    }
+
+    span.active {
+      font-weight: bold;
+      transition: all .25s;
+    }
+
+    .checkbox {
+      height: 0;
+      opacity: 0;
+    }
+
+    .switch > div {
+      width: 40px;
+      height: 13px;
+      background: #bebebe;
+      z-index: 0;
+      cursor: pointer;
+      position: relative;
+      border-radius: 20px;
+      line-height: 20px;
+      text-align: right;
+      padding: 0 10px;
+      color: rgba(0, 0, 0, .5);
+      transition: all 250ms;
+    }
+
+    .switch > input:checked + div {
+      background: #bebebe;
+      text-align: left;
+    }
+
+    .switch > div:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      left: 0;
+      top: -3px;
+      height: 20px;
+      width: 20px;
+      background: #57d589;
+      border-radius: 50%;
+      transition: all 200ms;
+      box-shadow: 0 5px 5px -3px rgba(0, 0, 0, .25);
+    }
+
+    .switch > input:checked + div:before {
+      content: '';
+      position: absolute;
+      left: 27px;
+      border-radius: 50%;
+    }
+  }
+
+  .horizontal-divider {
+    margin: 10px 0;
+  }
+
+  .contact-list-wrapper,
+  .business-name-wrapper,
+  .business-location-wrapper,
+  .about-wrapper,
+  .tags-wrapper,
+  .contact-list-editor {
+    position: relative;
+
+    .content-edit-icon {
+      background: rgba(255, 255, 255, 0.7);
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      padding: 3px 5px;
+      position: absolute;
+      right: 0px;
+      bottom: 0px;
+      opacity: 0;
+      text-align: center;
+
+      i {
+        font-size: 20px;
+        vertical-align: middle;
+      }
+    }
+  }
+
+  .business-location-wrapper {
+    h3 {
+      font-weight: 300;
+    }
+  }
+
+  .contact-list-wrapper:hover,
+  .business-name-wrapper:hover,
+  .business-location-wrapper:hover,
+  .about-wrapper:hover,
+  .tags-wrapper:hover,
+  .contact-list-editor:hover {
+    .content-edit-icon {
+      opacity: 0.75;
+      transition: opacity .5s;
+    }
+  }
+
+  .contact-list-editor,
+  input.business-name-editor,
+  input.business-location-editor,
+  textarea.about-editor,
+  .tag-editor {
+    width: 100%;
+    padding: 5px;
+    background-color: #efefef;
+    border: 1px solid #999c9e;
+    outline: none;
+  }
+
+  .contact-list-editor {
+    input {
+      background-color: #efefef;
+      border: none;
+      width: 95%;
+    }
+  }
+
+  .business-name-editor {
+    margin-bottom: 10px;
+    font-size: 32px;
+  }
+
+  .business-location-editor {
+    font-size: 28px;
+    font-weight: 300;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .desktop-view {
+    .box {
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop-view {
+    display: none;
+  }
+}
+
+.extra {
+  background-color: #eeeeee !important;
+  border: 1px solid $light-green !important;
+  padding: 0px !important;
+  pointer-events: auto !important;
+
+  &:hover {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  &.type-dark.place-bottom:after {
+    border-bottom-color: #eeeeee !important;
+  }
+
+  &.type-dark.place-bottom:before {
+    border-bottom: 8px solid $light-green !important;
+  }
+}
+
+.ReactModal__Overlay--after-open {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-business-modal {
+  font-family: 'Roboto', Helvetica, sans-serif;
+
+  a {
+    cursor: pointer;
+  }
+
+  &.create-business-fb-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 475px;
+    margin: auto;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .create-business-fb-box {
+    position: relative;
+    width: 475px;
+    height: 475px;
+    padding: 27px 27px 16px;
+    background-color: #fff;
+    box-shadow: 0px 5px 5px #ccc;
+    border-radius: 5px;
+    border-top: 1px solid #e9e9e9;
+    color: #95989a;
+    font-family: 'Roboto', Helvetica, sans-serif;
+  }
+
+  .create-business-fb-header {
+    text-align: center;
+
+    .left {
+      background-color: transparent;
+      border-width: 0px;
+      padding: 10px 0px;
+      font-weight: 300;
+      color: #95989a;
+      float: left !important;
+
+      &:focus {
+        border: 0;
+        outline: 0;
+      }
+    }
+
+    .right {
+      width: 80.9px;
+      padding: 5px 23.2px;
+      border: solid 2px $light-green;
+      border-radius: 25px;
+      color: $light-green;
+      font-size: 15px;
+      font-weight: bold;
+      float: right !important;
+    }
+  }
+
+  .line {
+    background-color: #434343;
+    height: 1px;
+    margin: 0px 27px 20px;
+  }
+
+  .create-business-fb-contents {
+    clear: both;
+    padding: 20px 30px 0px;
+    text-align: center;
+    color: #434343;
+
+    &.meta {
+      padding: 20px 10px 0;
+    }
+
+    .create-business-fb-title-content {
+      font-size: 24px;
+      line-height: 34px;
+      margin-bottom: 27px;
+    }
+
+    .create-business-fb-bottom-content {
+      font-size: 15px;
+    }
+
+    .create-business-fb-thrid-bottom-content {
+      padding: 0px 55px 0px;
+    }
+  }
+
+  .create-business-fb-center-content {
+    font-size: 15px;
+    text-align: center;
+    color: #434343;
+    margin: 0px 69px 20px;
+  }
+
+  .buttom_content {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 69px;
+    color: #95989a;
+  }
+
+  .create-business-page {
+    text-align: center;
+
+    .business-page-image {
+      border: 1px solid;
+    }
+
+    .business-page-text {
+      clear: both;
+      font-size: 15px;
+      line-height: 25px;
+    }
+  }
+
+  .check-email {
+    padding: 20px;
+
+    &.meta {
+      padding-top: 0;
+    }
+  }
+
+  .email-bottom-text {
+    color: #434343;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .waiting-page {
+    width: 475px;
+    height: 475px;
+    margin: -27px -27px 0px;
+    border-radius: 5px;
+    border-top: 1px solid #e9e9e9;
+    box-shadow: 0px 5px 5px #ccc;
+
+    .waiting-page-text {
+      font-size: 24px;
+      color: #434343;
+    }
+  }
+
+  .text-clear {
+    clear: both;
+  }
+}
+
+.kep-login-facebook {
+  padding: calc(.34435vw + 5.38843px) calc(.34435vw + 13.38843px) !important;
+}
+
+.create-business-spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.business-page-container {
+  max-height: 285px;
+  overflow-y: auto;
+}
+
+.create-background {
+  padding-top: 20px;
+
+  > div {
+    img {
+      width: 100%;
+    }
+  }
+}
